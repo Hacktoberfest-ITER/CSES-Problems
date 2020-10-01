@@ -23,7 +23,6 @@ Here we will have collection of solution of cses.fi
   - fork [this] repo
   - Add question as comments at top & its link
   - Now add "author: cses id" as comment at the end of your program (e.g. - author: pritam047)
-  - And then the results link "solution: result_link" (You will get this after verifying code in CSES)
   - Example: Python Code
     ```python
     # Print your Name
