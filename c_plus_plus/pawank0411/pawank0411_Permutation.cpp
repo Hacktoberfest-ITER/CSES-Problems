@@ -1,3 +1,13 @@
+/*
+A permutation of integers 1,2,…,n is called beautiful if there are no adjacent elements whose difference is 1.
+
+Given n, construct a beautiful permutation if such a permutation exists.
+
+Question Link : https://cses.fi/problemset/task/1070/
+Profile Link : https://cses.fi/user/32415
+author : pawank0411
+*/
+
 #include<bits/stdc++.h>
 
 using namespace std;
