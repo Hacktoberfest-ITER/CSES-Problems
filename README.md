@@ -23,12 +23,13 @@ Here we will have collection of solution of cses.fi
   - fork [this] repo
   - Add question as comments at top & its link
   - Now add "author: cses id" as comment at the end of your program (e.g. - author: pritam047)
-  - Example: Pyhton Code
+  - Example: Python Code
     ```python
     # Print your Name
     # cses.fi/printName
     print('Ayush> Kejariwal')
     # author: KejariwalAyush
+    # solution: https://cses.fi/problemset/result/1065540/
     ```
   - Rename that particular file here in the following format:
   - githubusername_problemname.fileformat (e.g. - pritam047_missing_number.c)
