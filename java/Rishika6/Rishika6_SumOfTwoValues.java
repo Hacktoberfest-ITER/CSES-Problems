@@ -1,5 +1,6 @@
 /*You are given an array of n integers, and your task is to find two values (at distinct positions) whose sum is x.*/
-//https://cses.fi/problemset/task/1640
+//Link---> https://cses.fi/problemset/task/1640
+
 
 import java.util.*;
 
@@ -46,3 +47,4 @@ class SumOfTwoValues{
     }
 }
 //author:Rishika
+//profile-->https://cses.fi/user/32327
