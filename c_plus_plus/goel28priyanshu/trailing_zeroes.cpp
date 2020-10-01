@@ -1,3 +1,10 @@
+//Problem
+
+// Task is to calculate the number of trailing zeros in the factorial n!.
+
+//Link: https://cses.fi/problemset/task/1618/
+
+
 #include <iostream>
 #include <cstdio>
 #include <cmath>
@@ -22,3 +29,6 @@ int main()
 
   return 0;
 }
+
+//author: goel5
+//Solution: https://cses.fi/problemset/result/1066999/
