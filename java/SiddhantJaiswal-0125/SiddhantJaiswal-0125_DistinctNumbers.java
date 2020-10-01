@@ -85,7 +85,7 @@ class SiddhantJaiswalDistinctNumbers
     }
 }
 
-//author : SiddhantJaiswal-0125
+//author : SiddhantJaiswal
 //Solution : https://cses.fi/problemset/result/1067152/
 
 
