@@ -17,3 +17,4 @@ def alg(n):
 alg(x)
 
 # author: saniya3
+# https://cses.fi/user/32262
