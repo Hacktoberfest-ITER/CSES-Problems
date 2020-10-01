@@ -23,12 +23,14 @@ Here we will have collection of solution of cses.fi
   - fork [this] repo
   - Add question as comments at top & its link
   - Now add "author: cses id" as comment at the end of your program (e.g. - author: pritam047)
-  - Example: Pyhton Code
+  - And then the results link "solution: result_link" (You will get this after verifying code in CSES)
+  - Example: Python Code
     ```python
     # Print your Name
     # cses.fi/printName
     print('Ayush> Kejariwal')
     # author: KejariwalAyush
+    # solution: https://cses.fi/problemset/result/1065540/
     ```
   - Rename that particular file here in the following format:
   - githubusername_problemname.fileformat (e.g. - pritam047_missing_number.c)
@@ -40,6 +42,7 @@ Here we will have collection of solution of cses.fi
 
 - Once we validate it, we shall accept your pull request.
 
+**Note: Don't send a PR with all 5 questions, you need to make a PR for individual questions and make a new PR only when your previous PR gets merged**
 **Note : Don't simply copy paste from others. Try to solve the problems on your own.**
 
 ### Example of passing test in cses
