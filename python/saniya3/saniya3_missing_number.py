@@ -12,3 +12,4 @@ def missing(seq,num):
 missing(y,n)
 
 # author: saniya3
+# https://cses.fi/user/32262
