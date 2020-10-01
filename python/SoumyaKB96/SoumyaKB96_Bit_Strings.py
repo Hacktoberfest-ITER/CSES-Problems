@@ -10,4 +10,4 @@ print((2**a)%(10**9 + 7))
 
 
 # Author : SoumyaKB96
-# result - https://cses.fi/problemset/result/1065192/
+# profile : https://cses.fi/user/32322
