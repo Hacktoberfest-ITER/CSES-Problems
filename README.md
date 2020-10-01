@@ -42,7 +42,6 @@ Here we will have collection of solution of cses.fi
 
 - Once we validate it, we shall accept your pull request.
 
-**Note: Don't send a PR with all 5 questions, you need to make a PR for individual questions and make a new PR only when your previous PR gets merged**
 **Note : Don't simply copy paste from others. Try to solve the problems on your own.**
 
 ### Example of passing test in cses
