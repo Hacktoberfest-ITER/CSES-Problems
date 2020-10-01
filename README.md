@@ -30,6 +30,7 @@ Here we will have collection of solution of cses.fi
     print('Ayush> Kejariwal')
     # author: KejariwalAyush
     # solution: https://cses.fi/problemset/result/1065540/
+    # profile: https://cses.fi/user/32415
     ```
   - Rename that particular file here in the following format:
   - githubusername_problemname.fileformat (e.g. - pritam047_missing_number.c)
