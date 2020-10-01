@@ -6,7 +6,7 @@
 
 //UserID: https://cses.fi/user/32264
 
-//Author: Sourav Bera
+//Author:souravbera
 
 //Result: https://cses.fi/problemset/result/1065843/
 import java.util.*;
