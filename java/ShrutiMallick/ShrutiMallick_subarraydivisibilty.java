@@ -30,4 +30,4 @@ public class Subarray {
 
 }
 //author:Shruti
-
+//profile:https://cses.fi/user/32358
