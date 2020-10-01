@@ -1,6 +1,12 @@
 # CSES-Problems
 
 Here we will have collection of solution of cses.fi
+## Contributors
+
+This is a list showing the GitHub usernames of all who have contributed to this open-source project! **Make sure to add yourself and submit a pull request if you've contributed.Please follow the proper format as provided below.**
+
+- [@pritam047](https://github.com/pritam047)
+
 
 ### Instrutions to Contribute:
 
