@@ -1,5 +1,9 @@
-// Distinct Numbers
-// https://cses.fi/problemset/task/1621/
+// Question:
+/*
+  You are given a list of n integers, and your task is to calculate the number of distinct values in the list.
+*/
+
+// link: https://cses.fi/problemset/task/1621/
 
 #include<bits/stdc++.h>
 using namespace std;

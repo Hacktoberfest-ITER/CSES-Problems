@@ -1,5 +1,11 @@
-// Counting Rooms
-// https://cses.fi/problemset/task/1192
+// Question:
+/*
+  You are given a map of a building, and your task is to count the number of its rooms. 
+  The size of the map is n×m squares, and each square is either floor or wall. 
+  You can walk left, right, up, and down through the floor squares.
+*/
+
+// link: https://cses.fi/problemset/task/1192
 
 #include<bits/stdc++.h>
 using namespace std;
