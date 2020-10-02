@@ -2,7 +2,11 @@
 # @belikesayantan
 
 
-'''Subarray Sums I : https://cses.fi/problemset/task/1660/'''
+'''
+Subarray Sums I : https://cses.fi/problemset/task/1660/
+Problem:
+    Given an array of n positive integers, your task is to count the number of subarrays having sum x.
+'''
 from collections import defaultdict
 
 _, x = (int(x) for x in input().split())
