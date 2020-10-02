@@ -1,0 +1,263 @@
+[33mcommit d921dcd9efd7dd2ae534829881f78301e83b077c[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: debashishsamantara <debashishsamantara1@gmail.com>
+Date:   Fri Oct 2 14:15:46 2020 +0530
+
+    Added permutation algorithm
+
+[33mcommit 4ce7c53d6af9dcbcb0c40f3d7d307de60ad74fcd[m
+Author: debashishsamantara <debashishsamantara1@gmail.com>
+Date:   Fri Oct 2 02:28:57 2020 +0530
+
+    Added Wierd Algorithm
+
+[33mcommit d95c5e5c2202e35e9f77b752d5cbb4d80b8a3280[m
+Merge: 2a3603d 931a6b2
+Author: Ayush Kejariwal <53415956+KejariwalAyush@users.noreply.github.com>
+Date:   Fri Oct 2 01:15:28 2020 +0530
+
+    Merge pull request #56 from Hackodex-ITER/revert-6-master
+    
+    Revert "Added solutions of CSES problems"
+
+[33mcommit 931a6b252a36cf6f4e936567cad82377604a3f44[m[33m ([m[1;31morigin/revert-6-master[m[33m)[m
+Author: Ayush Kejariwal <53415956+KejariwalAyush@users.noreply.github.com>
+Date:   Fri Oct 2 01:15:03 2020 +0530
+
+    Revert "Added solutions of CSES problems"
+
+[33mcommit 2a3603dcfbb431c4535101b579334021a76679ce[m
+Merge: d4acf26 4009118
+Author: Ayush Kejariwal <53415956+KejariwalAyush@users.noreply.github.com>
+Date:   Fri Oct 2 01:01:21 2020 +0530
+
+    Merge pull request #38 from dishak331/master
+    
+    cses problem solution added #3
+
+[33mcommit d4acf2614c6a6d8f7b765e92414dc857b0e820e3[m
+Merge: df5ce86 4688a64
+Author: Ayush Kejariwal <53415956+KejariwalAyush@users.noreply.github.com>
+Date:   Fri Oct 2 00:58:58 2020 +0530
+
+    Merge pull request #6 from Rishabh186/master
+    
+    Added solutions of CSES problems
+
+[33mcommit df5ce8688da73f0bf57c08ab7ec61c6520423e81[m
+Merge: f539086 86243ef
+Author: Ayush Kejariwal <53415956+KejariwalAyush@users.noreply.github.com>
+Date:   Fri Oct 2 00:58:10 2020 +0530
+
+    Merge pull request #5 from Pranjal81/master
+    
+    Round Trip CSES
+
+[33mcommit f539086c2566f965d715e2d18832ff4aeb85b66f[m
+Merge: 51d5439 f3cc216
+Author: Ayush Kejariwal <53415956+KejariwalAyush@users.noreply.github.com>
+Date:   Fri Oct 2 00:57:24 2020 +0530
+
+    Merge pull request #34 from Suvamrx/master
+    
+    added my folder
+
+[33mcommit 51d5439cae82c0037eb07f9e082f4e2e784fcbac[m
+Merge: 6e77dbe e21f4f6
+Author: Pawan Kumar Gorai <32352500+pawank0411@users.noreply.github.com>
+Date:   Fri Oct 2 00:38:51 2020 +0530
+
+    Merge pull request #54 from NasarTarique/master
+    
+    Added Tree Traversals Solution
+
+[33mcommit e21f4f618d31bdd564cca2c1080fde81302e976c[m
+Author: NasarTarique <nasartarique@gmail.com>
+Date:   Fri Oct 2 00:31:30 2020 +0530
+
+    Added Tree Traversals Solution
+
+[33mcommit 6e77dbe64997cf8712c4dedb5bbf08b7b1047deb[m
+Merge: 90b13c4 4209e04
+Author: PritamKar <pritamkar13@gmail.com>
+Date:   Thu Oct 1 23:43:36 2020 +0530
+
+    Merge pull request #50 from ayush933/master
+    
+    Add files via upload
+
+[33mcommit 90b13c48390c7f4f64297329cad805c0bbc726c9[m
+Merge: af49107 6e695be
+Author: PritamKar <pritamkar13@gmail.com>
+Date:   Thu Oct 1 23:39:06 2020 +0530
+
+    Merge pull request #51 from pritam047/master
+    
+    counting_divisors.py added
+
+[33mcommit 6e695be88d2d08a37965992ee48b03ccab2937c3[m
+Author: pritam047 <pritamkar13@gmail.com>
+Date:   Thu Oct 1 23:38:25 2020 +0530
+
+    counting_divisors.py added
+
+[33mcommit 4209e04af39f43209e3164ac7332e1996d90bef1[m
+Author: Ayush Sharma <mrayushs933@gmail.com>
+Date:   Thu Oct 1 22:45:37 2020 +0530
+
+    Add files via upload
+
+[33mcommit af4910753da1b7d62eb0ed343359078b7e1127d5[m
+Merge: f6cbfaa 3e583cc
+Author: Pawan Kumar Gorai <32352500+pawank0411@users.noreply.github.com>
+Date:   Thu Oct 1 22:41:07 2020 +0530
+
+    Merge pull request #30 from ASVKVINAYAK/master
+    
+    Added C++ solution of Weird Algorithm
+
+[33mcommit f6cbfaa089b60d59743d5fa56ddeddbc005912c1[m
+Merge: 001100e f54e640
+Author: Rohan Verma <rohanvermaara@gmail.com>
+Date:   Thu Oct 1 22:37:56 2020 +0530
+
+    Merge pull request #49 from MartyMiniac/master
+    
+    added repetitions.cpp
+
+[33mcommit 001100e6fbadd898b6332dd58c103fe445278702[m
+Author: Saniya Ahuja <53290877+saniya3@users.noreply.github.com>
+Date:   Thu Oct 1 22:36:19 2020 +0530
+
+    Rename saniya3_repetions.py to saniya3_repetitions.py
+
+[33mcommit f54e6401d9e7630b37ffa2fd9341281cc460593c[m
+Author: Rohan Verma <rohanvermaara@gmail.com>
+Date:   Thu Oct 1 22:35:12 2020 +0530
+
+    added repetitions.cpp
+
+[33mcommit a2184d44e837502a4f182e65e0e463e3fa511cd5[m
+Merge: 88b53d4 d4b9e33
+Author: Pawan Kumar Gorai <32352500+pawank0411@users.noreply.github.com>
+Date:   Thu Oct 1 22:33:18 2020 +0530
+
+    Merge pull request #48 from saniya3/master
+    
+    added solution 3
+
+[33mcommit d4b9e338ca5215bd346663e5cf2f38299693a1e0[m
+Author: Saniya Ahuja <ahuja.saniya@gmail.com>
+Date:   Thu Oct 1 22:30:33 2020 +0530
+
+    added solution 4
+
+[33mcommit b6faafefca2f678a2f6b03d7f29120f05c90b897[m
+Author: Saniya Ahuja <ahuja.saniya@gmail.com>
+Date:   Thu Oct 1 22:27:59 2020 +0530
+
+    updated
+
+[33mcommit 88b53d467916113278cec1af663e05ecb39949c8[m
+Merge: f6c9ef2 c23bfbb
+Author: Ayush Kejariwal <53415956+KejariwalAyush@users.noreply.github.com>
+Date:   Thu Oct 1 22:17:07 2020 +0530
+
+    Merge pull request #46 from SiddhantJaiswal-0125/master
+    
+    nearest smallest value added
+
+[33mcommit 10f98f8f271da8ac6c8ca378086051a9791e95c4[m
+Author: Saniya Ahuja <ahuja.saniya@gmail.com>
+Date:   Thu Oct 1 22:16:26 2020 +0530
+
+    added solution 3
+
+[33mcommit f6c9ef2781a22e5f3bd16f83563cba86198794d8[m
+Merge: 27a724a 901e1e3
+Author: Ayush Kejariwal <53415956+KejariwalAyush@users.noreply.github.com>
+Date:   Thu Oct 1 22:15:38 2020 +0530
+
+    Merge pull request #44 from pritam047/master
+    
+    weird algorithm added
+
+[33mcommit 27a724a79df78c7571c5d63debc43525ec852529[m
+Author: Saniya Ahuja <53290877+saniya3@users.noreply.github.com>
+Date:   Thu Oct 1 22:13:51 2020 +0530
+
+    Delete saniya3_repetions.py
+
+[33mcommit c23bfbbd56e5ae59affb32f3fa10ccbb03479edc[m
+Author: Siddhant Jaiswal <61560828+SiddhantJaiswal-0125@users.noreply.github.com>
+Date:   Thu Oct 1 22:12:09 2020 +0530
+
+    next Smaller value added
+
+[33mcommit df0e3ffd17befa2608e0fcd7b1909e65e98bf69f[m
+Merge: 19460f9 74c40c1
+Author: Hackodex-ITER <71882736+Hackodex-ITER@users.noreply.github.com>
+Date:   Thu Oct 1 22:09:15 2020 +0530
+
+    Merge pull request #45 from MartyMiniac/master
+    
+    added missing number.cpp
+
+[33mcommit 889e4af8ccb7a7e8ec24ef1cbfc7d8371f4d6e13[m
+Merge: 77e852d 14d15e1
+Author: Siddhant Jaiswal <61560828+SiddhantJaiswal-0125@users.noreply.github.com>
+Date:   Thu Oct 1 22:07:56 2020 +0530
+
+    Merge branch 'master' of https://github.com/SiddhantJaiswal-0125/CSES-Problems
+
+[33mcommit 77e852d3ab8a2c18dc8a72cad42ef12e58e81aa7[m
+Author: Siddhant Jaiswal <61560828+SiddhantJaiswal-0125@users.noreply.github.com>
+Date:   Thu Oct 1 22:07:49 2020 +0530
+
+    Nearest Smaller Values added
+
+[33mcommit 74c40c14c6218b757ba19d395acdf20d748fe1f4[m
+Author: Rohan Verma <rohanvermaara@gmail.com>
+Date:   Thu Oct 1 22:07:21 2020 +0530
+
+    added missing number.cpp
+
+[33mcommit 901e1e3fe505bf35dfa14e8e691688df0a8d93cc[m
+Author: pritam047 <pritamkar13@gmail.com>
+Date:   Thu Oct 1 22:06:37 2020 +0530
+
+    weird algorithm added
+
+[33mcommit 19460f93d146028fd399577e7414737c97829e1a[m
+Author: Saniya Ahuja <53290877+saniya3@users.noreply.github.com>
+Date:   Thu Oct 1 22:04:49 2020 +0530
+
+    solution 3
+
+[33mcommit d4139ac0ea4d1a77e3f6e0be5eec0ed4c38c3bbb[m
+Merge: 136ff3b 4b3dd24
+Author: Hackodex-ITER <71882736+Hackodex-ITER@users.noreply.github.com>
+Date:   Thu Oct 1 22:03:56 2020 +0530
+
+    Merge pull request #42 from Raviruler/master
+    
+    Repetition solution in java
+
+[33mcommit 136ff3b28b7378868182d820ad15055ef0aa985d[m
+Merge: 4b4164c a140c90
+Author: Hackodex-ITER <71882736+Hackodex-ITER@users.noreply.github.com>
+Date:   Thu Oct 1 22:00:56 2020 +0530
+
+    Merge pull request #2 from adarsh1405/master
+    
+    demo case added
+
+[33mcommit 4b4164c3249b4ab8568fdfd98898c4c603b034a1[m
+Merge: 14d15e1 c8e9e4a
+Author: Hackodex-ITER <71882736+Hackodex-ITER@users.noreply.github.com>
+Date:   Thu Oct 1 22:00:35 2020 +0530
+
+    Merge pull request #43 from MartyMiniac/master
+    
+    added weird_algorithm.cpp
+
+[33mcommit 3e
