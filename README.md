@@ -35,7 +35,6 @@ This is a list showing the GitHub usernames of all who have contributed to this 
     # cses.fi/printName
     print('Ayush> Kejariwal')
     # author: KejariwalAyush
-    # solution: https://cses.fi/problemset/result/1065540/
     # profile: https://cses.fi/user/32415
     ```
   - Rename that particular file here in the following format:
