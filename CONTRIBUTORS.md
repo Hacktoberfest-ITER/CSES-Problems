@@ -1,6 +1,6 @@
 # CONTRIBUTORS
 
-These are the list of contributors to this project.
+These are the list of contributors to this project **who have completed 5 problems**.
 
 > ## How to edit it
 >
@@ -10,7 +10,8 @@ These are the list of contributors to this project.
     replace it with **"s=50"**
 > - add your name & link of your Profile in given format in next line
     `> [Name](https://github.com/UserName)`
-    
+> - While making PR mention your name in it.
+> 
 > #### NOTE: Before making PR make sure to check if everything is ok in preview section
 
 # Main Contributors
