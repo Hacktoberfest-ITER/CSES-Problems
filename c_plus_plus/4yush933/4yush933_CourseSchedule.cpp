@@ -1,6 +1,7 @@
 // author: 4yush933
 // problem: https://cses.fi/problemset/task/1679/
 // Sol: https://cses.fi/problemset/result/1023749/
+// Question: Standard Topological Sort
 #pragma GCC optimize("O3")  
 #include <bits/stdc++.h>
 #include <fstream>
@@ -86,3 +87,4 @@ signed main() {
    	for(int x:v) cout<<x<<' ';
   	return 0;
 }
+// Profile:https://cses.fi/user/13405
