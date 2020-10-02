@@ -52,6 +52,3 @@ You should pass all tests, then only submit it here.
 ![Example](https://github.com/Hackodex-ITER/Hackodex-ITER/blob/master/example.jpg?raw=true)
 
 
-# CSES-Problems/c_plus_plus/
-# 1. goel28priyanshu
-    - Trailing Zeros - c_plus_plus/goel28priyanshu/goel28priyanshu_trailing_zeros.cpp
