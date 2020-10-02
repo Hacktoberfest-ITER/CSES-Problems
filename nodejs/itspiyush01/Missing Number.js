@@ -14,7 +14,6 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 let arr = [];
-count = 0;
 var n;
 rl.question("", (X) => {
   n = X;
