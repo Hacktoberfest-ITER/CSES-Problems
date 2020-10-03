@@ -1,3 +1,4 @@
+
 # CONTRIBUTORS
 
 ## Add you Name in Contributors
@@ -21,3 +22,7 @@ These are the list of contributors to this project **who have completed 5 proble
 
 > ![Ayush Kejariwal](https://avatars0.githubusercontent.com/u/53415956?s=50&u=36af1e2bed940f8d45769feef50cb564cec69c29&v=4) 
 > [Ayush Kejariwal](https://github.com/KejariwalAyush/)
+
+>![Shruti Mallick](https://avatars3.githubusercontent.com/u/53283341?s=50&u=ca203c1993d22c6ddc81914ab1d43a1ebe8f3586&v=4)
+>[Shruti Mallick](https://github.com/ShrutiMallick/)
+=======
