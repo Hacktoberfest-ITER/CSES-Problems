@@ -9,7 +9,7 @@ Here we will have collection of solution of cses.fi
 - Learning about Open source contributions
 
 ###  CONTRIBUTE
-- Head over to [CONTRIBUTORS.md](https://github.com/Hackodex-ITER/CSES-Problems/blob/master/CONTRIBUTORS.md) to make Contributions 
+- Head over to [Contributing.md](https://github.com/Hackodex-ITER/CSES-Problems/blob/master/Contributing.md) to make Contributions 
 
 ## Official Banner
 
