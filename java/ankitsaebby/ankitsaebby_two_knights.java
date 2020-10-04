@@ -1,8 +1,8 @@
 
 
 
-//Your task is to count for k=1,2,…,n the number of ways two knights can be placed on a
-//k×k chessboard so that they do not attack each other
+//Your task is to count for k=1,2,â€¦,n the number of ways two knights can be placed on a
+//kÃ—k chessboard so that they do not attack each other
 
 //author:ankitsaebby
 
@@ -26,3 +26,5 @@ public class ankitsaebby_two_knights {
 	}
 
 }
+
+// cses id- https://cses.fi/user/32538
