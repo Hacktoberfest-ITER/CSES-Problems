@@ -4,7 +4,7 @@
 ''' Sum of Two Values - https://cses.fi/problemset/task/1640
 You are given an array of n integers, and your task is to find two values (at distinct positions) whose sum is x.
 '''
-from collections import defaultdict
+
 def TwoSum(n: 'int length of the array', x: 'int target', arr: 'list of integers') -> str:
     temp = dict()
     for i in range(n):
