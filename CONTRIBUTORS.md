@@ -37,3 +37,6 @@ These are the list of contributors to this project **who have completed 5 proble
 
 > ![Abhishek Kumar](https://avatars1.githubusercontent.com/u/53290881?s=50&u=a4d8d99b68442ff8708fd19a890483394f9659a2&v=4) 
 > [Abhishek Kumar](https://github.com/iamAbhishekkumar)
+
+> ![Sayantan Paul](https://avatars1.githubusercontent.com/u/53504602?s=50&u=5fc91194fc3c7ecac67567f1b106ec73c2f7a048&v=4)
+> [Sayantan Paul](https://github.com/belikesayantan)
