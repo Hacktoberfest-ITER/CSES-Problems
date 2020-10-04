@@ -40,3 +40,6 @@ These are the list of contributors to this project **who have completed 5 proble
 
 > ![Sayantan Paul](https://avatars1.githubusercontent.com/u/53504602?s=50&u=5fc91194fc3c7ecac67567f1b106ec73c2f7a048&v=4)
 > [Sayantan Paul](https://github.com/belikesayantan)
+
+> ![Sourav Bera](https://avatars2.githubusercontent.com/u/53810519?s=50&u=c716c11e3e57faf13816af35ab6be152be1092b2&v=4)
+> [Sourav Bera](https://github.com/Zeo-shark/)
