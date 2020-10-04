@@ -5,7 +5,7 @@
     task: find the missing number between 1 and n.
 */
 
-// submission: 
+// submission: https://cses.fi/paste/ac2a1297ded9b6811087c2/
 
 #include <iostream>
 #include <algorithm>
