@@ -7,10 +7,10 @@ These are the list of contributors to this project **who have completed 5 proble
 > ## How to edit it
 >
 > - Replace image with your github image by copying the image link
-    `- <img src="github image link" width="50"> `
+    `> <img src="github image link" width="50"> `
 > - then add your name & link of your Profile in given format in next line
     `[Name](https://github.com/UserName)`
-> - Final Code `- <img src="github image link" width="50"> [Name](https://github.com/UserName)`
+> - Final Code `> <img src="github image link" width="50"> [Name](https://github.com/UserName)`
 > - While making PR mention your name in it.
 > 
 > #### NOTE: Before making PR make sure to check if everything is ok in preview section
@@ -19,9 +19,9 @@ These are the list of contributors to this project **who have completed 5 proble
 
 ### We have Completed 5 Problems
 
-- <img src="https://avatars0.githubusercontent.com/u/53415956?s=50&u=36af1e2bed940f8d45769feef50cb564cec69c29&v=4" width="50"> [Ayush Kejariwal](https://github.com/KejariwalAyush/)
+> <img src="https://avatars0.githubusercontent.com/u/53415956?s=50&u=36af1e2bed940f8d45769feef50cb564cec69c29&v=4" width="50"> [Ayush Kejariwal](https://github.com/KejariwalAyush/)
 
-- <img src="https://avatars3.githubusercontent.com/u/53283341?s=50&u=ca203c1993d22c6ddc81914ab1d43a1ebe8f3586&v=4" width="50"> [Shruti Mallick](https://github.com/ShrutiMallick/)
+> <img src="https://avatars3.githubusercontent.com/u/53283341?s=50&u=ca203c1993d22c6ddc81914ab1d43a1ebe8f3586&v=4" width="50"> [Shruti Mallick](https://github.com/ShrutiMallick/)
 
 > <img src="https://avatars0.githubusercontent.com/u/54541820?s=50&u=f502c71c7cd15ef5c6358835ba3729c83b2adc32&v=4" width="50"> [Ayush Kumar Sahoo](https://github.com/Ayushkumarsahoo)
 
