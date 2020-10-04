@@ -31,3 +31,6 @@ These are the list of contributors to this project **who have completed 5 proble
 
 > ![Suvam Pattnaik](https://avatars3.githubusercontent.com/u/53616716?s=50&u=2fe91488e7a8f06888b4ba8e5e9b6ccefa7933e2&v=4)
 > [Suvam Pattnaik](https://github.com/Suvamrx)
+
+> ![Debashish Samantara](https://avatars2.githubusercontent.com/u/51512354?s=50&u=0346e1fd2505257e4416d80983147e7e56936c59&v=4)
+> [Debashish Samantara](https://github.com/debashishsamantara/)
