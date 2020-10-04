@@ -41,5 +41,5 @@ These are the list of contributors to this project **who have completed 5 proble
 > ![Sayantan Paul](https://avatars1.githubusercontent.com/u/53504602?s=50&u=5fc91194fc3c7ecac67567f1b106ec73c2f7a048&v=4)
 > [Sayantan Paul](https://github.com/belikesayantan)
 
-> ![Rituraj Gupta](https://avatars3.githubusercontent.com/u/62745286?s=50&u=562f836c3c09b6d47ca7c6559b5b85c863d67383&v=4)
-> [Rituraj Gupta](https://github.com/rituraj-iter)
+> ![Ravi Kumar Prasad](https://avatars3.githubusercontent.com/u/53331170?s=50&u=8c74d2b581da068bc247d2ec5d808012c94aa71e&v=4)
+>[Ravi Kumar Prasad](https://github.com/Raviruler)
