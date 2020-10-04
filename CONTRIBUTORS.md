@@ -37,3 +37,6 @@ These are the list of contributors to this project **who have completed 5 proble
 
 > ![Abhishek Kumar](https://avatars1.githubusercontent.com/u/53290881?s=50&u=a4d8d99b68442ff8708fd19a890483394f9659a2&v=4) 
 > [Abhishek Kumar](https://github.com/iamAbhishekkumar)
+
+> ![Rituraj Gupta](https://avatars3.githubusercontent.com/u/62745286?s=50&u=562f836c3c09b6d47ca7c6559b5b85c863d67383&v=4)
+> [Rituraj Gupta](https://github.com/rituraj-iter)
