@@ -1,3 +1,14 @@
+//You are given all numbers between 1,2,3,n except one. Your task is to find the missing number.
+//Example
+
+//Input:
+//5
+//2 3 1 5
+
+//Output:
+//4
+//Link:-https://cses.fi/problemset/task/1083
+//*/
 import java .util.*;
 public class missingnumber 
 {
@@ -19,3 +30,6 @@ public class missingnumber
 	}
 
 }
+//Author: Priyesh kumar Chudhary
+// Git_hub Id: PriyeshChoudhary
+//cses: https://cses.fi/user/32279
