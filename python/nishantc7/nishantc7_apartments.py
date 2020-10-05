@@ -1,4 +1,4 @@
-# Apartments
+# Apartments : There are n applicants and m free apartments. Your task is to distribute the apartments so that as many applicants as possible will get an apartment.
 #https://cses.fi/problemset/task/1084
 
 
