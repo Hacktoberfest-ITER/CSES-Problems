@@ -43,4 +43,4 @@ These are the list of contributors to this project **who have completed 5 proble
 
 > <img src="https://avatars0.githubusercontent.com/u/67056908?s=50&u=952c0a1bdea37923c88d3b02efdfc3857d6889fb&v=4" width="50"> [Suman More](https://github.com/SumanMore)
 
-> <img src="https://avatars2.githubusercontent.com/u/35103134?s=400&u=da937d6e2d81bb61854db4ffcae7a32c62eca125&v=4" width="50"> [Nishant Choudhary](https://github.com/nishantc7)
+> <img src="https://avatars2.githubusercontent.com/u/53290877?s=460&u=46ca1d4c64f4f7e9b44af379d4dba66b7784c31e&v=4" width="50"> [Saniya Ahuja](https://github.com/saniya3)
