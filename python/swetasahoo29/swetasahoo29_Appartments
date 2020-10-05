@@ -1,0 +1,22 @@
+# PROBLEM NUMBER
+# https:https://cses.fi/problemset/task/1084/
+# Sweta Snigdha Sahoo
+# author : swetasahoo29
+# QUESTION
+# There are n applicants and m free apartments. Your task is to distribute the apartments so that as many applicants as possible will get an apartment.
+
+# Each applicant has a desired apartment size, and they will accept any apartment whose size is close enough to the desired size.
+
+def t():return map(int,input().split())
+x,y,k=t()
+a,b,c,j,i=sorted(t()),sorted(t()),0,0,0
+while i<x and j<y:
+    if a[i]+k<b[j]:
+        i+=1
+    elif a[i]-k>b[j]:
+        j+=1
+    else:
+        c+=1
+        j+=1
+        i+=1
+print(c)
