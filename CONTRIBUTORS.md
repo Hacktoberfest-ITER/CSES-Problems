@@ -40,3 +40,6 @@ These are the list of contributors to this project **who have completed 5 proble
 
 > ![Sayantan Paul](https://avatars1.githubusercontent.com/u/53504602?s=50&u=5fc91194fc3c7ecac67567f1b106ec73c2f7a048&v=4)
 > [Sayantan Paul](https://github.com/belikesayantan)
+
+> ![Ankit Singh](https://avatars3.githubusercontent.com/u/54979627?s=50&u=c2aa86fadf778fd0f167b0f3d21f7ac9ac9c3927&v=4)
+> [Ankit Singh](https://github.com/ankitSaebby)
