@@ -43,5 +43,4 @@ These are the list of contributors to this project **who have completed 5 proble
 
 > <img src="https://avatars0.githubusercontent.com/u/67056908?s=50&u=952c0a1bdea37923c88d3b02efdfc3857d6889fb&v=4" width="50"> [Suman More](https://github.com/SumanMore)
 
-
 > <img src="https://avatars3.githubusercontent.com/u/66875383?s=460&v=4" width="50"> [Aaditya Mittal](https://github.com/aadityamittal)
