@@ -31,3 +31,6 @@ These are the list of contributors to this project **who have completed 5 proble
 
 > ![Suvam Pattnaik](https://avatars3.githubusercontent.com/u/53616716?s=50&u=2fe91488e7a8f06888b4ba8e5e9b6ccefa7933e2&v=4)
 > [Suvam Pattnaik](https://github.com/Suvamrx)
+
+> ![Satyapragyan Das](https://avatars2.githubusercontent.com/u/53405743?s=50&u=2fc27198e07aefb45a87c604203e43dd777ade86&v=4)
+> [Satyapragyan Das](https://github.com/SatyapragyanDas)
