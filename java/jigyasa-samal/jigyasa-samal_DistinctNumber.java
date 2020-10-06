@@ -4,7 +4,7 @@ You are given a list of n integers, and your task is to calculate the number of 
 */
 
 import java.util.*;
-public class Main {
+public class DistinctNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
