@@ -1,20 +1,19 @@
+
 # CONTRIBUTORS
 
 ## Add you Name in Contributors
-
 These are the list of contributors to this project **who have completed 5 problems**.
-
 - **Note: Make this changes with the last question PR or else your Hacktober Fest PR may get rejected**
-  > ## How to edit it
-  >
-  > - Replace image with your github image by copying the image link
-      `> <img src="github image link" width="50"> `
-  > - then add your name & link of your Profile in given format in next line
-      `[Name](https://github.com/UserName)`
-  > - Final Code `> <img src="github image link" width="50"> [Name](https://github.com/UserName)`
-  > - While making PR mention your name in it.
-  >
-  > #### NOTE: Before making PR make sure to check if everything is ok in preview section
+> ## How to edit it
+>
+> - Replace image with your github image by copying the image link
+    `> <img src="github image link" width="50"> `
+> - then add your name & link of your Profile in given format in next line
+    `[Name](https://github.com/UserName)`
+> - Final Code `> <img src="github image link" width="50"> [Name](https://github.com/UserName)`
+> - While making PR mention your name in it.
+> 
+> #### NOTE: Before making PR make sure to check if everything is ok in preview section
 
 # Main Contributors
 
@@ -67,5 +66,7 @@ These are the list of contributors to this project **who have completed 5 proble
 > <img src="https://avatars2.githubusercontent.com/u/53347922?s=460&u=b013f0df2d0660f0d4d73e6894cb97b742691e39&v=4" width="50"> [Tapas Sahu](https://github.com/Tapas14102000)
 
 > <img src="https://avatars2.githubusercontent.com/u/53369178?s=50&u=5771461cdf37a59987901757d03e0b054a8488b3&v=4" width="50"> [Rohan Verma](https://github.com/MartyMiniac)
+
+> <img src="https://avatars2.githubusercontent.com/u/54182748?s=400&u=033f6ff627c84c52db30c638a63f48aa5788ac73&v=4" width="50"> [Prakash Pathak](https://github.com/Prakashpathak984)
 
 > <img src="https://avatars1.githubusercontent.com/u/53572957?s=400&u=8a71d277b1a0b1e423647aea047c6507e93640a6&v=4" width="50"> [Piyush Ranjan](https://github.com/itsPiyush01)
