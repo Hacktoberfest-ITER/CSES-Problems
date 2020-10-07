@@ -67,4 +67,9 @@ These are the list of contributors to this project **who have completed 5 proble
 
 > <img src="https://avatars2.githubusercontent.com/u/53369178?s=50&u=5771461cdf37a59987901757d03e0b054a8488b3&v=4" width="50"> [Rohan Verma](https://github.com/MartyMiniac)
 
+> <img src="https://avatars2.githubusercontent.com/u/54182748?s=400&u=033f6ff627c84c52db30c638a63f48aa5788ac73&v=4" width="50"> [Prakash Pathak](https://github.com/Prakashpathak984)
+
+> <img src="https://avatars1.githubusercontent.com/u/53572957?s=400&u=8a71d277b1a0b1e423647aea047c6507e93640a6&v=4" width="50"> [Piyush Ranjan](https://github.com/itsPiyush01)
+
 > <img src="https://avatars2.githubusercontent.com/u/53405743?s=400&u=2fc27198e07aefb45a87c604203e43dd777ade86&v=4" width="50"> [Satyapragyan Das](https://github.com/SatyapragyanDas)
+
