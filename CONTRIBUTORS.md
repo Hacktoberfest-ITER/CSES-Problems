@@ -25,6 +25,7 @@ These are the list of contributors to this project **who have completed 5 proble
 
 > <img src="https://avatars0.githubusercontent.com/u/54541820?s=50&u=f502c71c7cd15ef5c6358835ba3729c83b2adc32&v=4" width="50"> [Ayush Kumar Sahoo](https://github.com/Ayushkumarsahoo)
 
+<<<<<<< HEAD
 > <img src="https://avatars3.githubusercontent.com/u/53616716?s=50&u=2fe91488e7a8f06888b4ba8e5e9b6ccefa7933e2&v=4" width="50"> [Suvam Pattnaik](https://github.com/Suvamrx)
 
 > <img src="https://avatars2.githubusercontent.com/u/51512354?s=50&u=0346e1fd2505257e4416d80983147e7e56936c59&v=4" width="50"> [Debashish Samantara](https://github.com/debashishsamantara/)
@@ -66,3 +67,6 @@ These are the list of contributors to this project **who have completed 5 proble
 > <img src="https://avatars2.githubusercontent.com/u/53347922?s=460&u=b013f0df2d0660f0d4d73e6894cb97b742691e39&v=4" width="50"> [Tapas Sahu](https://github.com/Tapas14102000)
 
 > <img src="https://avatars2.githubusercontent.com/u/53369178?s=50&u=5771461cdf37a59987901757d03e0b054a8488b3&v=4" width="50"> [Rohan Verma](https://github.com/MartyMiniac)
+
+> <img src="https://avatars2.githubusercontent.com/u/53405743?s=400&u=2fc27198e07aefb45a87c604203e43dd777ade86&v=4" width="50"> [Satyapragyan Das](https://github.com/SatyapragyanDas)
+>>>>>>> upstream/master
