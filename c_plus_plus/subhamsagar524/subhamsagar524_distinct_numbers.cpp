@@ -5,7 +5,7 @@
     task: calculate the number of distinct values in the list.
 */
 
-// submission: 
+// submission: https://cses.fi/paste/8fa7d3f03fa9e89a10bf5b/
 
 #include <iostream>
 #include <algorithm>
