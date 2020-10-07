@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 import 'package:html/parser.dart';
 import 'package:http/http.dart' as http;
+import 'package:url_launcher/url_launcher.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
@@ -35,7 +36,9 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Text(
-                'You have pushed the button this many times:',
+                'All Contributors of Hackodex - CSES Problems',
+                overflow: TextOverflow.visible,
+                style: TextStyle(fontSize: 20),
               ),
               FutureBuilder(
                 future: _getData(),
@@ -59,7 +62,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   } else {
                     return Container(
                       child: Center(
-                        child: Text("Loading"),
+                        child: GFLoader(
+                          type: GFLoaderType.circle,
+                          size: 100,
+                        ),
                       ),
                     );
                   }
@@ -69,76 +75,98 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          print('Pressed');
-          _getData();
-        },
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 
   Widget profileCard(var i) {
     return SizedBox(
       // height: 150,
-      width: 300,
-      child: GFCard(
-        boxFit: BoxFit.cover,
-        padding: EdgeInsets.all(10),
-        elevation: 5,
-        titlePosition: GFPosition.start,
-        title: GFListTile(
-          avatar: GFAvatar(
-            backgroundImage: NetworkImage(i['avatar_url']),
+      width: 250,
+      child: InkWell(
+        onDoubleTap: () async {
+          if (await canLaunch(i['url'])) {
+            await launch(i['url']);
+          } else {
+            throw 'Could not launch ${i['url']}';
+          }
+        },
+        child: GFCard(
+          boxFit: BoxFit.cover,
+          padding: EdgeInsets.all(10),
+          elevation: 5,
+          gradient: LinearGradient(
+              colors: [Colors.lightBlueAccent[100], Colors.white30]),
+          content: Column(
+            children: [
+              GFAvatar(
+                backgroundImage: NetworkImage(i['avatar_url']),
+                radius: 45,
+              ),
+              RichText(
+                softWrap: true,
+                textAlign: TextAlign.center,
+                text: TextSpan(
+                    text: i['name'],
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    children: [
+                      TextSpan(text: '\nContributions:  ${i['contributions']}'),
+                      // TextSpan(text: '\nINFO')
+                    ]),
+              ),
+            ],
           ),
-          titleText: i['login'],
-          subtitleText: 'Contributions:  ${i['contributions']}',
+          buttonBar: GFButtonBar(
+            alignment: WrapAlignment.spaceEvenly,
+            crossAxisAlignment: WrapCrossAlignment.start,
+            spacing: 5,
+            children: <Widget>[
+              Text('Followers: ${i['followers']}'),
+              Text('Following: ${i['following']}'),
+              Text('PublicRepos: ${i['public_repos']}'),
+            ],
+          ),
         ),
-        // content:
-        //     Text("Some quick example text to build on the card"),
-        // buttonBar: GFButtonBar(
-        //   children: <Widget>[
-        //     GFAvatar(
-        //       backgroundColor: GFColors.PRIMARY,
-        //       child: Icon(
-        //         Icons.share,
-        //         color: Colors.white,
-        //       ),
-        //     ),
-        //     GFAvatar(
-        //       backgroundColor: GFColors.SECONDARY,
-        //       child: Icon(
-        //         Icons.search,
-        //         color: Colors.white,
-        //       ),
-        //     ),
-        //     GFAvatar(
-        //       backgroundColor: GFColors.SUCCESS,
-        //       child: Icon(
-        //         Icons.phone,
-        //         color: Colors.white,
-        //       ),
-        //     ),
-        //   ],
-        // ),
       ),
     );
   }
 
   Future<List> _getData() async {
+    Map<String, dynamic> linkMap;
+    List allData = [];
     final mainurl = 'https://api.github.com/repos/Hackodex-ITER/CSES-Problems';
     var resp = await http.get(mainurl + '/contributors');
-    print(mainurl + '/contributors');
-    print(resp.statusCode);
+    // print(resp.statusCode);
     if (resp.statusCode == 200) {
       var jsonData = json.decode(resp.body);
       for (var item in jsonData) {
         data.add(item);
+        var response = await http.get(item['url']);
+        if (response.statusCode == 200) {
+          var jd = json.decode(response.body);
+          linkMap = ({
+            'contributions': item['contributions'],
+            'name': jd['name'],
+            'github_id': jd['login'],
+            'avatar_url': jd['avatar_url'],
+            'public_repos': jd['public_repos'],
+            'public_gists': jd['public_gists'],
+            'followers': jd['followers'],
+            'following': jd['following'],
+            'bio': jd['bio'],
+            'url': jd['html_url']
+          });
+          allData.add(json.decode(json.encode(linkMap)));
+        }
       }
+      // for (var item in linkMap) {
+      //   allData.add(json.encode(item));
+      // }
+      // debugPrint(allData[0]);
+      return allData;
     }
-    return data;
   }
 }
 
