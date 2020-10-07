@@ -9,11 +9,11 @@ import java.util.StringTokenizer;
 public class IncreasingArray {
 
 	public static void main(String[] args) {
-	/*	//FastReader fr=new FastReader();
-	//	int n=fr.nextInt();
-		//int a[]=new int[n];
-		//for(int i=0;i<n;i++) {
-			//a[i]=fr.nextInt();
+	FastReader fr=new FastReader();
+		int n=fr.nextInt();
+		int a[]=new int[n];
+		for(int i=0;i<n;i++) {
+			a[i]=fr.nextInt();
 		}
 		long turns=0;
 		for(int i=0;i<n-1;i++) {
@@ -22,11 +22,68 @@ public class IncreasingArray {
 				a[i+1]=a[i];
 			}
 		}
-		System.out.println(turns);*/
+		System.out.println(turns);
 		
 
 	}
 
+}
+
+class FastReader
+{
+    BufferedReader br;
+    StringTokenizer st;
+
+    public FastReader()
+    {
+        br = new BufferedReader(new
+                InputStreamReader(System.in));
+    }
+
+    String next()
+    {
+        while (st == null || !st.hasMoreElements())
+        {
+            try
+            {
+                st = new StringTokenizer(br.readLine());
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+        return st.nextToken();
+    }
+
+    int nextInt()
+    {
+        return Integer.parseInt(next());
+    }
+
+    long nextLong()
+    {
+        return Long.parseLong(next());
+    }
+
+    double nextDouble()
+    {
+        return Double.parseDouble(next());
+    }
+
+    String nextLine()
+    {
+        String str = "";
+        try
+        {
+            str = br.readLine();
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+        return str;
+    }
 }
 
 //author:Rishika
