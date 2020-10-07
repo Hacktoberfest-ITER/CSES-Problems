@@ -60,3 +60,5 @@ These are the list of contributors to this project **who have completed 5 proble
 > <img src="https://avatars1.githubusercontent.com/u/53518611?s=50&u=c4b5f332a1deb5c82049bf4709b7d767ce87a228&v=4" width="50"> [RIJULDAS](https://github.com/RIJULDAS)
 
 > <img src="https://avatars3.githubusercontent.com/u/42297139?s=400&u=2f3162358f1bb3f73ba4465cc9bcdc8209180e89&v=4" width="50"> [SoumyaKB96](https://github.com/SoumyaKB96)
+
+> <img src="https://avatars0.githubusercontent.com/u/53297570?s=460&v=4" width="50">[Rishika Wadhera](https:/github.com/Rishika6)
