@@ -61,7 +61,17 @@ These are the list of contributors to this project **who have completed 5 proble
 
 > <img src="https://avatars3.githubusercontent.com/u/42297139?s=400&u=2f3162358f1bb3f73ba4465cc9bcdc8209180e89&v=4" width="50"> [SoumyaKB96](https://github.com/SoumyaKB96)
 
+> <img src="https://avatars0.githubusercontent.com/u/53297570?s=460&v=4" width="50">[Rishika Wadhera](https:/github.com/Rishika6)
+
+> <img src="https://avatars2.githubusercontent.com/u/53347922?s=460&u=b013f0df2d0660f0d4d73e6894cb97b742691e39&v=4" width="50"> [Tapas Sahu](https://github.com/Tapas14102000)
+
+> <img src="https://avatars2.githubusercontent.com/u/53369178?s=50&u=5771461cdf37a59987901757d03e0b054a8488b3&v=4" width="50"> [Rohan Verma](https://github.com/MartyMiniac)
+
+> <img src="https://avatars2.githubusercontent.com/u/54182748?s=400&u=033f6ff627c84c52db30c638a63f48aa5788ac73&v=4" width="50"> [Prakash Pathak](https://github.com/Prakashpathak984)
+
+> <img src="https://avatars1.githubusercontent.com/u/53572957?s=400&u=8a71d277b1a0b1e423647aea047c6507e93640a6&v=4" width="50"> [Piyush Ranjan](https://github.com/itsPiyush01)
+
+> <img src="https://avatars2.githubusercontent.com/u/53405743?s=400&u=2fc27198e07aefb45a87c604203e43dd777ade86&v=4" width="50"> [Satyapragyan Das](https://github.com/SatyapragyanDas)
+
 > <img src="https://avatars0.githubusercontent.com/u/54390873?s=50&u=9d5f426d3b9484be68a485e0b0a9f122aff2c0e4&v=4" width="50"> [Kshitiz Ranjan](https://github.com/kshitizranjan15)
-
-
 
