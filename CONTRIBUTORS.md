@@ -73,3 +73,5 @@ These are the list of contributors to this project **who have completed 5 proble
 
 > <img src="https://avatars2.githubusercontent.com/u/53405743?s=400&u=2fc27198e07aefb45a87c604203e43dd777ade86&v=4" width="50"> [Satyapragyan Das](https://github.com/SatyapragyanDas)
 
+> <img src="https://avatars0.githubusercontent.com/u/54390873?s=400&u=9d5f426d3b9484be68a485e0b0a9f122aff2c0e4&v=4" width="50"> [Kshitiz Ranjan](https://github.com/kshitizranjan15)
+
