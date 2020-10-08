@@ -17,12 +17,15 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   List data = [];
+  List<String> contributors = [];
+  String ml = '';
 
-  // @override
-  // void initState() {
-  //   // getData();
-  //   super.initState();
-  // }
+  @override
+  void initState() {
+    _mainContributors();
+    // getData();
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -94,8 +97,8 @@ class _MyHomePageState extends State<MyHomePage> {
           boxFit: BoxFit.cover,
           padding: EdgeInsets.all(10),
           elevation: 5,
-          gradient: LinearGradient(
-              colors: [Colors.lightBlueAccent[100], Colors.white30]),
+          gradient:
+              LinearGradient(colors: [Colors.deepPurple[200], Colors.white30]),
           content: Column(
             children: [
               GFAvatar(
@@ -113,7 +116,10 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     children: [
                       TextSpan(text: '\nContributions:  ${i['contributions']}'),
-                      // TextSpan(text: '\nINFO')
+                      TextSpan(
+                          text: ml.contains(i['github_id'])
+                              ? '\nCompleted 5 PRs 🌟!'
+                              : ''),
                     ]),
               ),
             ],
@@ -167,6 +173,36 @@ class _MyHomePageState extends State<MyHomePage> {
       // debugPrint(allData[0]);
       return allData;
     }
+  }
+
+  Future<void> _mainContributors() async {
+    String names = '';
+    final contriurl =
+        'https://raw.githubusercontent.com/Hackodex-ITER/CSES-Problems/master/CONTRIBUTORS.md';
+    var resp = await http.get(contriurl);
+    // print(resp.statusCode);
+    if (resp.statusCode == 200) {
+      var pdata = resp.body;
+      String s =
+          pdata.toString().trim().split('### We have Completed 5 Problems')[1];
+      // print(s.split('> <img'));
+      contributors = s.split('https://github.com/');
+      for (var i = 1; i < contributors.length; i++) {
+        contributors[i] = contributors[i].split(')')[0];
+        if (contributors[i].contains('/'))
+          contributors[i] =
+              contributors[i].substring(0, contributors[i].length - 1);
+        setState(() {
+          names += contributors[i] + ',';
+        });
+      }
+    }
+    setState(() {
+      ml = names;
+    });
+    print('Main Contributors Fetched!');
+    // print(ml.contains('KejariwalAyush'));
+    // return ml;
   }
 }
 
