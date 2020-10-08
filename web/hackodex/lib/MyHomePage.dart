@@ -1,9 +1,10 @@
 import 'dart:convert';
+import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
-import 'package:html/parser.dart';
 import 'package:http/http.dart' as http;
+import 'package:line_awesome_icons/line_awesome_icons.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -19,11 +20,12 @@ class _MyHomePageState extends State<MyHomePage> {
   List data = [];
   List<String> contributors = [];
   String ml = '';
+  bool showAll = false;
+  int totcont = 0;
 
   @override
   void initState() {
     _mainContributors();
-    // getData();
     super.initState();
   }
 
@@ -32,67 +34,197 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
-      ),
-      body: Center(
-        child: SingleChildScrollView(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
+        leading: GFAvatar(
+          radius: 15,
+          backgroundImage: AssetImage('assets/hackodex.png'),
+        ),
+        actions: [
+          Row(
+            children: [
               Text(
-                'All Contributors of Hackodex - CSES Problems',
-                overflow: TextOverflow.visible,
-                style: TextStyle(fontSize: 20),
+                'Show All  ',
+                style: TextStyle(color: Colors.white),
               ),
-              FutureBuilder(
-                future: _getData(),
-                builder: (BuildContext context, AsyncSnapshot snapshot) {
-                  if (snapshot.data != null) {
-                    return Container(
-                      height: MediaQuery.of(context).size.height,
-                      color: Color(0xfffF7F7F7),
-                      child: SingleChildScrollView(
-                        child: Wrap(
-                          spacing: 8.0, // gap between adjacent chips
-                          runSpacing: 4.0, // gap between lines
-                          direction: Axis.horizontal,
-                          children: snapshot.data
-                              .map((item) => profileCard(item))
-                              .toList()
-                              .cast<Widget>(),
-                        ),
-                      ),
-                    );
-                  } else {
-                    return Container(
-                      child: Center(
-                        child: GFLoader(
-                          type: GFLoaderType.circle,
-                          size: 100,
-                        ),
-                      ),
-                    );
-                  }
+              GFToggle(
+                onChanged: (val) {
+                  setState(() {
+                    showAll = !showAll;
+                  });
                 },
+                value: showAll,
+                type: GFToggleType.square,
               ),
             ],
-          ),
-        ),
+          )
+        ],
+        backgroundColor: Color(0xFF072540),
+        automaticallyImplyLeading: false,
       ),
+      body: Stack(
+        children: [
+          RotatedBox(
+            quarterTurns: 1,
+            child: Container(
+              // color: Color(0xFF93C2DB),
+              decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                      colors: [Color(0xFFFF8AE2), Color(0xFF93C2DB)],
+                      tileMode: TileMode.mirror)),
+            ),
+          ),
+          Center(
+            child: SingleChildScrollView(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[
+                  Wrap(
+                    direction: Axis.horizontal,
+                    children: [
+                      GFCard(
+                        borderRadius: BorderRadius.circular(20),
+                        borderOnForeground: true,
+                        // boxFit: BoxFit.fill,
+                        // height: MediaQuery.of(context).size.width / 2,
+                        color: Color(0xFF072541),
+                        image: Image.network(
+                          'https://github.com/Hackodex-ITER/Hackodex-ITER/blob/master/Hacktober.png?raw=true',
+                          fit: BoxFit.scaleDown,
+                          width: MediaQuery.of(context).size.width / 2,
+                        ),
+                      ),
+                      GFCard(
+                        boxFit: BoxFit.fitHeight,
+                        color: Color(0xFF072541),
+                        // gradient: Gradient(color: [Color(0xFF072541)]),
+                        borderOnForeground: true,
+                        borderRadius: BorderRadius.circular(20),
+                        elevation: 50,
+                        title: GFListTile(
+                          title: Text(
+                            'About Us:',
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ),
+                        content: Text(
+                          "We Code We Explore !\nThe only coding club of ITER, SOA University.",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(color: Colors.white),
+                        ),
+                        buttonBar: GFButtonBar(
+                          direction: Axis.horizontal,
+                          //  alignment: MainAxisAlignment.spaceEvenly,
+
+                          children: <Widget>[
+                            GFButton(
+                              onPressed: () =>
+                                  openUrl('https://github.com/codex-iter'),
+                              text: 'GitHub',
+                              icon: Icon(LineAwesomeIcons.github),
+                            ),
+                            GFButton(
+                              onPressed: () => openUrl(
+                                  'https://www.youtube.com/channel/UCu1S3gm2ODknxDlkpPX2RrA'),
+                              text: 'YouTube',
+                              icon: Icon(LineAwesomeIcons.youtube),
+                            ),
+                            GFButton(
+                              onPressed: () => openUrl(
+                                  'https://www.instagram.com/codexiter/'),
+                              text: 'Instagram',
+                              icon: Icon(LineAwesomeIcons.instagram),
+                            ),
+                            GFButton(
+                              onPressed: () => openUrl(
+                                  'https://www.linkedin.com/company/codexiter/'),
+                              text: 'LinkedIn',
+                              icon: Icon(LineAwesomeIcons.linkedin),
+                            ),
+                            GFButton(
+                              onPressed: () => openUrl(
+                                  'https://www.facebook.com/codexiter/'),
+                              text: 'Facebook',
+                              icon: Icon(LineAwesomeIcons.facebook),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                  Text(
+                    showAll
+                        ? 'All Contributors of Hackodex - CSES Problems'
+                        : 'Contributors Who have Completed 5 PRs',
+                    overflow: TextOverflow.visible,
+                    textAlign: TextAlign.center,
+                  ),
+                  Text(
+                    showAll
+                        ? 'Total Contributors: $totcont'
+                        : 'Contributors: ${contributors.length}',
+                    overflow: TextOverflow.visible,
+                    style: TextStyle(fontSize: 25),
+                  ),
+                  Text(
+                    'Double click to see user profile\n',
+                    overflow: TextOverflow.visible,
+                    style: TextStyle(fontSize: 10),
+                  ),
+                  buildFutureBuilder(),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void openUrl(String url) async {
+    if (await canLaunch(url)) {
+      await launch(url, forceSafariVC: false);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  FutureBuilder<List> buildFutureBuilder() {
+    return FutureBuilder(
+      future: _getData(),
+      builder: (BuildContext context, AsyncSnapshot snapshot) {
+        if (snapshot.data != null) {
+          return SingleChildScrollView(
+            child: Wrap(
+              spacing: 8.0, // gap between adjacent chips
+              runSpacing: 4.0, // gap between lines
+              direction: Axis.horizontal,
+              children: snapshot.data
+                  .map((item) => !showAll
+                      ? ml.contains(item['github_id'])
+                          ? profileCard(item)
+                          : SizedBox()
+                      : profileCard(item))
+                  .toList()
+                  .cast<Widget>(),
+            ),
+          );
+        } else {
+          return Container(
+            child: Center(
+              child: GFLoader(
+                size: 100,
+              ),
+            ),
+          );
+        }
+      },
     );
   }
 
   Widget profileCard(var i) {
     return SizedBox(
-      // height: 150,
       width: 250,
       child: InkWell(
-        onDoubleTap: () async {
-          if (await canLaunch(i['url'])) {
-            await launch(i['url']);
-          } else {
-            throw 'Could not launch ${i['url']}';
-          }
-        },
+        onDoubleTap: () => openUrl(i['url']),
         child: GFCard(
           boxFit: BoxFit.cover,
           padding: EdgeInsets.all(10),
@@ -141,6 +273,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future<List> _getData() async {
     Map<String, dynamic> linkMap;
+
     List allData = [];
     final mainurl = 'https://api.github.com/repos/Hackodex-ITER/CSES-Problems';
     var resp = await http.get(mainurl + '/contributors');
@@ -167,12 +300,12 @@ class _MyHomePageState extends State<MyHomePage> {
           allData.add(json.decode(json.encode(linkMap)));
         }
       }
-      // for (var item in linkMap) {
-      //   allData.add(json.encode(item));
-      // }
-      // debugPrint(allData[0]);
+      setState(() {
+        totcont = allData.length;
+      });
       return allData;
     }
+    return allData;
   }
 
   Future<void> _mainContributors() async {
@@ -201,25 +334,5 @@ class _MyHomePageState extends State<MyHomePage> {
       ml = names;
     });
     print('Main Contributors Fetched!');
-    // print(ml.contains('KejariwalAyush'));
-    // return ml;
   }
 }
-
-// Widget listWidget() {
-//   return FutureBuilder(
-//     future: getData(),
-//     builder: (context, snapshot) {
-//       if (snapshot.connectionState == ConnectionState.none &&
-//           snapshot.hasData == null) return Container();
-//       return ListView.builder(
-//         itemCount: snapshot.data.length,
-//         itemBuilder: (context, index) {
-//           return profileCard(index);
-//         },
-//         shrinkWrap: true,
-//         scrollDirection: Axis.horizontal,
-//       );
-//     },
-//   );
-// }
