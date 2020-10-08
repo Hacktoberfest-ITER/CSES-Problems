@@ -1,0 +1,10 @@
+# PROBLEM NUMBER
+# https://cses.fi/problemset/task/1631
+# Sweta Snigdha Sahoo
+# author : swetasahoo29
+# QUESTION
+# There are n books, and Kotivalo and Justiina are going to read them all. For each book, you know the time it takes to read it.
+
+# They both read each book from beginning to end, and they cannot read a book at the same time. What is the minimum total time required?
+n,i=int(input()),list(map(int,input().split()))
+print(sum(i) if sum(i)-max(i)>=max(i) else max(i)*2)
