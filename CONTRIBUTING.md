@@ -25,7 +25,7 @@
     ```python
     # Print your Name
     # cses.fi/printName
-    print('Ayush> Kejariwal')
+    print('Ayush Kejariwal')
     # author: KejariwalAyush
     # profile: https://cses.fi/user/32415
     ```
@@ -38,7 +38,7 @@
   - And make a pull request to original repo
 
 - Once we validate it, we shall accept your pull request.
-- While making Your Last Pull Request i.e., While making PR for 5th question add your Name in [CONTRIBUTORS.md](https://github.com/Hackodex-ITER/CSES-Problems/edit/master/CONTRIBUTORS.md)
+- While making Your Last Pull Request i.e., While making PR for 5th question add your Name in [CONTRIBUTORS.md](https://github.com/Hackodex-ITER/CSES-Problems/blob/master/CONTRIBUTORS.md)
 
 **Note : Don't simply copy paste from others. Try to solve the problems on your own.**
 
