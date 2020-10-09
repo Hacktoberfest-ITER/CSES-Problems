@@ -77,4 +77,4 @@ These are the list of contributors to this project **who have completed 5 proble
 
 > <img src="https://avatars0.githubusercontent.com/u/53207299?s=460&u=fc6a1bc63de723c575b55174f269ce91cbe9ed8e&v=4" width="50"> [Tarique Nasar](https://github.com/NasarTarique)
 
-> <img src="https://avatars0.githubusercontent.com/u/54671469?s=460&v=4"> [Sweta Mukherjee](https://github.com/swetamukherjee)
+> <img src="https://avatars0.githubusercontent.com/u/54671469?s=460&v=4" width="50"> [Sweta Mukherjee](https://github.com/swetamukherjee)
