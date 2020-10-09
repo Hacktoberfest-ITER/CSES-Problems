@@ -2,35 +2,35 @@
 using namespace std;
 #define endl "\n"
 
-bool DFS_color(int node,int col, vector<int>&color,vector<vector<int>>&g,vector<bool>&visited)
+bool DFS_color(int node,int col, vector<int>&color,vector<vector<int>>&g)
 {
-    visited[node]=true;
+    
     color[node]=col;
+    bool res=true;
     for(auto v:g[node])
     {
-        cout<<node<<"  "<<v<<endl;
+       
         if(color[v]==0)
         {
-            return  DFS_color(v,(col^3),color,g,visited);            
+         
+            res= res&DFS_color(v,(col^3),color,g);            
         }
         if(color[node]==color[v])
         return false;
 
     }
-    return true;
+    return res;
 }
 
 int main()
 {
 ios_base::sync_with_stdio(false);
 cin.tie(NULL);
-//freopen("input.txt","r",stdin);
-//freopen("output.txt","w",stdout);
+
 int n,m;
 cin>>n>>m;
 vector<vector<int>> g(n);
 vector<int>color(n,0);
-vector<bool> visited(n,false);
 
 for(int i=0;i<m;i++)
 {
@@ -39,17 +39,24 @@ for(int i=0;i<m;i++)
     g[u-1].push_back(v-1);
     g[v-1].push_back(u-1);
 }
-
+bool res=true;
 for(int i=0;i<n;i++)
 {
-    if(!visited[i])
+    if(color[i]==0)
     {
-        DFS_color(i,1,color,g,visited);
+       res=res&DFS_color(i,1,color,g);
     }
 }
+if(res)
+{
 for(int i=0;i<n;i++)
 cout<<color[i]<<" ";
 cout<<endl;
+}
+else
+{
+cout<<"IMPOSSIBLE\n";
+}
 
 return 0;
 }
