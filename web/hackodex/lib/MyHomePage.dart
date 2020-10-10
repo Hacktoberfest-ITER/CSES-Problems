@@ -170,6 +170,16 @@ class _MyHomePageState extends State<MyHomePage> {
                     style: TextStyle(fontSize: 10),
                   ),
                   buildFutureBuilder(),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Text(
+                    'THANKS FOR VISITING! 😁😎\nMADE WITH LOVE FOR HACKTOBERFEST BY Ayush Kejariwal💖✌',
+                    textAlign: TextAlign.center,
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
                 ],
               ),
             ),
@@ -194,12 +204,12 @@ class _MyHomePageState extends State<MyHomePage> {
         if (snapshot.data != null) {
           return SingleChildScrollView(
             child: Wrap(
-              spacing: 8.0, // gap between adjacent chips
-              runSpacing: 4.0, // gap between lines
+              // spacing: 8.0, // gap between adjacent chips
+              // runSpacing: 4.0, // gap between lines
               direction: Axis.horizontal,
               children: snapshot.data
                   .map((item) => !showAll
-                      ? ml.contains(item['github_id'])
+                      ? ml.contains(item['login'])
                           ? profileCard(item)
                           : SizedBox()
                       : profileCard(item))
@@ -223,8 +233,59 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget profileCard(var i) {
     return SizedBox(
       width: 250,
+      //   child: ExpansionTile(
+      //     title: i['login'],
+      //     leading: GFAvatar(
+      //       backgroundImage: NetworkImage(i['avatar_url']),
+      //       radius: 45,
+      //     ),
+      //     childrenPadding: EdgeInsets.all(10),
+      //     subtitle: Text('Contributions:  ${i['contributions']}'),
+      //     trailing: ml.contains(i['login'])
+      //         ? Icon(
+      //             Icons.star,
+      //             color: Colors.orangeAccent,
+      //           )
+      //         : SizedBox(),
+      //     initiallyExpanded: false,
+      //     // onExpansionChanged: (value) {
+      //     //   profileData = getProfile(i['url']);
+      //     // },
+      //     children: [
+      //       FutureBuilder(
+      //         future: getProfile(i['url']),
+      //         builder: (BuildContext context, AsyncSnapshot snapshot) {
+      //           if (snapshot.data != null) {
+      //             return InkWell(
+      //               onTap: () => openUrl(snapshot.data['url']),
+      //               child: Container(
+      //                 child: Wrap(
+      //                   alignment: WrapAlignment.spaceEvenly,
+      //                   children: [
+      //                     Text('Name: ${snapshot.data['name']}'),
+      //                     Text('Followers: ${snapshot.data['followers']}'),
+      //                     Text('Following: ${snapshot.data['following']}'),
+      //                     Text('PublicRepos: ${snapshot.data['public_repos']}'),
+      //                   ],
+      //                 ),
+      //               ),
+      //             );
+      //           } else {
+      //             return Container(
+      //               child: Center(
+      //                 child: GFLoader(
+      //                   size: 30,
+      //                 ),
+      //               ),
+      //             );
+      //           }
+      //         },
+      //       ),
+      //     ],
+      //   ),
+      // );
       child: InkWell(
-        onDoubleTap: () => openUrl(i['url']),
+        onDoubleTap: () => openUrl(i['html_url']),
         child: GFCard(
           boxFit: BoxFit.cover,
           padding: EdgeInsets.all(10),
@@ -241,7 +302,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 softWrap: true,
                 textAlign: TextAlign.center,
                 text: TextSpan(
-                    text: i['name'],
+                    text: i['login'],
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
@@ -249,9 +310,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     children: [
                       TextSpan(text: '\nContributions:  ${i['contributions']}'),
                       TextSpan(
-                          text: ml.contains(i['github_id'])
+                          text: ml.contains(i['login'])
                               ? '\nCompleted 5 PRs 🌟!'
-                              : ''),
+                              : '\n'),
                     ]),
               ),
             ],
@@ -261,9 +322,29 @@ class _MyHomePageState extends State<MyHomePage> {
             crossAxisAlignment: WrapCrossAlignment.start,
             spacing: 5,
             children: <Widget>[
-              Text('Followers: ${i['followers']}'),
-              Text('Following: ${i['following']}'),
-              Text('PublicRepos: ${i['public_repos']}'),
+              FutureBuilder(
+                future: getProfile(i['url']),
+                builder: (context, snapshot) {
+                  if (snapshot.hasData) {
+                    return Column(
+                      children: [
+                        Text('Followers: ${snapshot.data['followers']}'),
+                        Text('Following: ${snapshot.data['following']}'),
+                        Text('PublicRepos: ${snapshot.data['public_repos']}'),
+                      ],
+                    );
+                  } else
+                    return GFLoader(
+                      type: GFLoaderType.custom,
+                      loaderIconOne: Text('Please'),
+                      loaderIconTwo: Text('Wait'),
+                      loaderIconThree: Text('a moment'),
+                    );
+                },
+              ),
+              // Text('Followers: ${i['followers']}'),
+              // Text('Following: ${i['following']}'),
+              // Text('PublicRepos: ${i['public_repos']}'),
             ],
           ),
         ),
@@ -275,37 +356,42 @@ class _MyHomePageState extends State<MyHomePage> {
     Map<String, dynamic> linkMap;
 
     List allData = [];
+    data = [];
     final mainurl = 'https://api.github.com/repos/Hackodex-ITER/CSES-Problems';
     var resp = await http.get(mainurl + '/contributors');
     // print(resp.statusCode);
     if (resp.statusCode == 200) {
       var jsonData = json.decode(resp.body);
+      setState(() {
+        totcont = jsonData.toString().split('},').length;
+      });
       for (var item in jsonData) {
         data.add(item);
-        var response = await http.get(item['url']);
-        if (response.statusCode == 200) {
-          var jd = json.decode(response.body);
-          linkMap = ({
-            'contributions': item['contributions'],
-            'name': jd['name'],
-            'github_id': jd['login'],
-            'avatar_url': jd['avatar_url'],
-            'public_repos': jd['public_repos'],
-            'public_gists': jd['public_gists'],
-            'followers': jd['followers'],
-            'following': jd['following'],
-            'bio': jd['bio'],
-            'url': jd['html_url']
-          });
-          allData.add(json.decode(json.encode(linkMap)));
-        }
+        // await getProfile(item, linkMap, allData);
       }
-      setState(() {
-        totcont = allData.length;
-      });
-      return allData;
+
+      return data;
     }
-    return allData;
+    return data;
+  }
+
+  Future getProfile(String url) async {
+    var response = await http.get(url);
+    if (response.statusCode == 200) {
+      var jd = json.decode(response.body);
+      var linkMap = ({
+        'name': jd['name'],
+        'github_id': jd['login'],
+        'avatar_url': jd['avatar_url'],
+        'public_repos': jd['public_repos'],
+        'public_gists': jd['public_gists'],
+        'followers': jd['followers'],
+        'following': jd['following'],
+        'bio': jd['bio'],
+        'url': jd['html_url']
+      });
+      return (json.decode(json.encode(linkMap)));
+    }
   }
 
   Future<void> _mainContributors() async {
