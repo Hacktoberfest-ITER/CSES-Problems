@@ -1,6 +1,9 @@
-/*weird algorithm
-/cses.fi/problemset/task/1068
+/*
+Consider an algorithm that takes as input a positive integer n. 
+If n is even, the algorithm divides it by two, and if n is odd, the algorithm multiplies it by three and adds one.
 */
+//cses.fi/problemset/task/1068
+
 import java.util.*;
 public class UtkarshShankar_Weird {
 
