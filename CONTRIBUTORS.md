@@ -81,3 +81,4 @@ These are the list of contributors to this project **who have completed 5 proble
 
 > <img src="https://avatars1.githubusercontent.com/u/66764663?s=460&u=c18aaa7dfe075fc37001cd8d7b58a05a9cb591f4&v=4" width="50"> [Abhishek Bannerjee](https://github.com/AbHiSHekAB01)
 
+> <img src="https://avatars0.githubusercontent.com/u/54671469?s=460&v=4" width="50"> [Sweta Mukherjee](https://github.com/swetamukherjee)
