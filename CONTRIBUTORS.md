@@ -38,3 +38,5 @@ These are the list of contributors to this project **who have completed 5 proble
 > <img src="https://avatars2.githubusercontent.com/u/53810519?s=50&u=c716c11e3e57faf13816af35ab6be152be1092b2&v=4" width="50"> [Sourav Bera](https://github.com/Zeo-shark)
 
 > <img src="https://avatars3.githubusercontent.com/u/53331170?s=50&u=8c74d2b581da068bc247d2ec5d808012c94aa71e&v=4" width="50"> [Ravi Kumar Prasad](https://github.com/Raviruler)
+
+> <img src="https://avatars1.githubusercontent.com/u/53455642?s=460&u=144afd60f6046fe4abd459432afe593317f36523&v=4" width="50"> [Shivangi Bose](https://github.com/Shivangibose)
