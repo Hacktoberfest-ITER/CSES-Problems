@@ -88,3 +88,5 @@ These are the list of contributors to this project **who have completed 5 proble
 > <img src="https://avatars1.githubusercontent.com/u/53455642?s=460&u=144afd60f6046fe4abd459432afe593317f36523&v=4" width="50"> [Shivangi Bose](https://github.com/Shivangibose)
 
 > <img src="https://avatars0.githubusercontent.com/u/53292445?s=400&u=d281c4eef56a9d6a151e88761ddf64df824ce416&v=4" width="50"> [Jigyasa-Samal](https://github.com/jigyasa-samal)
+
+> <img src="https://avatars3.githubusercontent.com/u/53367345?s=400&u=72e97079457e79b14a43ef6c88e7eadd79e103bf&v=4" width="50"> [A S V K Vinayak](https://github.com/ASVKVINAYAK)
