@@ -1,6 +1,6 @@
 //You are given a list of n integers, and your task is to calculate the number of distinct values in the list.
  
-//https://cses.fi/problemset/result/1108825/
+//https://cses.fi/problemset/task/1621
  
 //Author:Abhiserk417374
 
