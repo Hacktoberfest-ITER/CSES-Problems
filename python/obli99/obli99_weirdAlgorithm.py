@@ -2,11 +2,10 @@
 # Link: https://cses.fi/problemset/task/1068/
 # author: jyotij
 # profile: https://cses.fi/user/32333
-# solution: https://cses.fi/problemset/result/1132972/
+# solution: https://cses.fi/problemset/result/1133081/
 
 n = int((input()))
 print(n, end=" ")
-
 while n != 1:
     if n % 2 == 0:
         n //= 2
