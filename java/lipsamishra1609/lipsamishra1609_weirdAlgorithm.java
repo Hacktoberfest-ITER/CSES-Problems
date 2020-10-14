@@ -7,7 +7,7 @@ Output
 Print a line that contains all values of n during the algorithm.
 
 link : https://cses.fi/problemset/task/1068
-author: scauldron16
+author: Lipsa Mishra
 profile: https://cses.fi/user/32829
 */
 
