@@ -5,7 +5,7 @@
 https://cses.fi/problemset/task/1069
  */
 import java.util.*;
-public class Utkarsh_Shankar_Repetitions {
+public class UtkarshShankar_Repetitions {
 
 	public static void main(String[] args) {
 		Scanner in=new Scanner(System.in);
