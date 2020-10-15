@@ -92,3 +92,6 @@ These are the list of contributors to this project **who have completed 5 proble
 > <img src="https://avatars3.githubusercontent.com/u/53367345?s=400&u=72e97079457e79b14a43ef6c88e7eadd79e103bf&v=4" width="50"> [A S V K Vinayak](https://github.com/ASVKVINAYAK)
 
 > <img src="https://avatars2.githubusercontent.com/u/42293958?s=460&u=5badb6c27808a289900552fbdd3bdb8ae8f7e1e1&v=4" width="50"> [Subham Sagar Paira](https://github.com/subhamsagar524/)
+
+> <img src="https://avatars1.githubusercontent.com/u/44501265?s=460&u=735a8a890ce7a0cf5c1b700ee2b9c2cf1a26b916&v=4" width="50"> [Jyoti Jayadeep Jena](https://github.com/obli99/)
+
