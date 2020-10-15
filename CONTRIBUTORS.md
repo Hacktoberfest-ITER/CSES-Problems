@@ -61,6 +61,8 @@ These are the list of contributors to this project **who have completed 5 proble
 
 > <img src="https://avatars3.githubusercontent.com/u/42297139?s=400&u=2f3162358f1bb3f73ba4465cc9bcdc8209180e89&v=4" width="50"> [SoumyaKB96](https://github.com/SoumyaKB96)
 
+> <img src="https://avatars3.githubusercontent.com/u/42297139?s=400&u=2f3162358f1bb3f73ba4465cc9bcdc8209180e89&v=4" width="50"> [SoumyaKB96](https://github.com/SoumyaKB96)
+
 > <img src="https://avatars0.githubusercontent.com/u/53297570?s=460&v=4" width="50">[Rishika Wadhera](https:/github.com/Rishika6)
 
 > <img src="https://avatars2.githubusercontent.com/u/53347922?s=460&u=b013f0df2d0660f0d4d73e6894cb97b742691e39&v=4" width="50"> [Tapas Sahu](https://github.com/Tapas14102000)
@@ -94,3 +96,7 @@ These are the list of contributors to this project **who have completed 5 proble
 > <img src="https://avatars2.githubusercontent.com/u/42293958?s=460&u=5badb6c27808a289900552fbdd3bdb8ae8f7e1e1&v=4" width="50"> [Subham Sagar Paira](https://github.com/subhamsagar524/)
 
 > <img src="https://avatars0.githubusercontent.com/u/53703526?s=400&v=4" width="50"> [Aditya Sharma](https://github.com/itsjohnty)
+
+> <img src="https://avatars0.githubusercontent.com/u/53336453?s=400&u=dbe50a5612b23d5348cfaa567a559ce8335ef6f0&v=4" width="50"> [Ashish Senapati](https://github.com/ash0202)
+
+
