@@ -2,7 +2,7 @@
 //https://cses.fi/problemset/task/1083/
 
 import java.util.*;
-public class Utkarsh_Shankar_Missing_number {
+public class UtkarshShankar_Missing_number {
 
 	public static void main(String[] args) {
 		Scanner in=new Scanner(System.in);
