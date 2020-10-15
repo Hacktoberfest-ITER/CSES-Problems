@@ -32,5 +32,5 @@ These are the list of contributors to this project **who have completed 5 proble
 > ![Suvam Pattnaik](https://avatars3.githubusercontent.com/u/53616716?s=50&u=2fe91488e7a8f06888b4ba8e5e9b6ccefa7933e2&v=4)
 > [Suvam Pattnaik](https://github.com/Suvamrx)
 
-> ![Sudeep Swaink](https://avatars3.githubusercontent.com/u/53346605?s=60&v=4)
+> ![Sudeep Swaink](https://avatars2.githubusercontent.com/u/53346605?s=50&u=3123e8b1d21be6142c5250360fc1ccd6939bbd61&v=4)
 > [Sudeep Swain](https://github.com/Sudeep25022000)
