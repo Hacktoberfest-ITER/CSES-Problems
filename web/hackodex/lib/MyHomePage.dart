@@ -24,12 +24,6 @@ class _MyHomePageState extends State<MyHomePage> {
   int totcont = 0;
 
   @override
-  void initState() {
-    _mainContributors();
-    super.initState();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -38,11 +32,13 @@ class _MyHomePageState extends State<MyHomePage> {
           radius: 15,
           backgroundImage: AssetImage('assets/hackodex.png'),
         ),
+        backgroundColor: Color(0xFF072540),
+        automaticallyImplyLeading: false,
         actions: [
           Row(
             children: [
               Text(
-                'Show All  ',
+                'Show More Details  ',
                 style: TextStyle(color: Colors.white),
               ),
               GFToggle(
@@ -52,20 +48,17 @@ class _MyHomePageState extends State<MyHomePage> {
                   });
                 },
                 value: showAll,
-                type: GFToggleType.square,
+                type: GFToggleType.android,
               ),
             ],
-          )
+          ),
         ],
-        backgroundColor: Color(0xFF072540),
-        automaticallyImplyLeading: false,
       ),
       body: Stack(
         children: [
           RotatedBox(
             quarterTurns: 1,
             child: Container(
-              // color: Color(0xFF93C2DB),
               decoration: BoxDecoration(
                   gradient: LinearGradient(
                       colors: [Color(0xFFFF8AE2), Color(0xFF93C2DB)],
@@ -83,8 +76,6 @@ class _MyHomePageState extends State<MyHomePage> {
                       GFCard(
                         borderRadius: BorderRadius.circular(20),
                         borderOnForeground: true,
-                        // boxFit: BoxFit.fill,
-                        // height: MediaQuery.of(context).size.width / 2,
                         color: Color(0xFF072541),
                         image: Image.network(
                           'https://github.com/Hackodex-ITER/Hackodex-ITER/blob/master/Hacktober.png?raw=true',
@@ -95,7 +86,6 @@ class _MyHomePageState extends State<MyHomePage> {
                       GFCard(
                         boxFit: BoxFit.fitHeight,
                         color: Color(0xFF072541),
-                        // gradient: Gradient(color: [Color(0xFF072541)]),
                         borderOnForeground: true,
                         borderRadius: BorderRadius.circular(20),
                         elevation: 50,
@@ -112,8 +102,6 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                         buttonBar: GFButtonBar(
                           direction: Axis.horizontal,
-                          //  alignment: MainAxisAlignment.spaceEvenly,
-
                           children: <Widget>[
                             GFButton(
                               onPressed: () =>
@@ -165,7 +153,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     style: TextStyle(fontSize: 25),
                   ),
                   Text(
-                    'Double click to see user profile\n',
+                    'Click on card to see user profile\n',
                     overflow: TextOverflow.visible,
                     style: TextStyle(fontSize: 10),
                   ),
@@ -199,8 +187,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
   FutureBuilder<List> buildFutureBuilder() {
     return FutureBuilder(
-      future: _getData(),
+      future: _mainContributors(),
       builder: (BuildContext context, AsyncSnapshot snapshot) {
+        // print(snapshot.data);
         if (snapshot.data != null) {
           return SingleChildScrollView(
             child: Wrap(
@@ -208,11 +197,7 @@ class _MyHomePageState extends State<MyHomePage> {
               // runSpacing: 4.0, // gap between lines
               direction: Axis.horizontal,
               children: snapshot.data
-                  .map((item) => !showAll
-                      ? ml.contains(item['login'])
-                          ? profileCard(item)
-                          : SizedBox()
-                      : profileCard(item))
+                  .map((item) => profileCard(item))
                   .toList()
                   .cast<Widget>(),
             ),
@@ -233,59 +218,8 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget profileCard(var i) {
     return SizedBox(
       width: 250,
-      //   child: ExpansionTile(
-      //     title: i['login'],
-      //     leading: GFAvatar(
-      //       backgroundImage: NetworkImage(i['avatar_url']),
-      //       radius: 45,
-      //     ),
-      //     childrenPadding: EdgeInsets.all(10),
-      //     subtitle: Text('Contributions:  ${i['contributions']}'),
-      //     trailing: ml.contains(i['login'])
-      //         ? Icon(
-      //             Icons.star,
-      //             color: Colors.orangeAccent,
-      //           )
-      //         : SizedBox(),
-      //     initiallyExpanded: false,
-      //     // onExpansionChanged: (value) {
-      //     //   profileData = getProfile(i['url']);
-      //     // },
-      //     children: [
-      //       FutureBuilder(
-      //         future: getProfile(i['url']),
-      //         builder: (BuildContext context, AsyncSnapshot snapshot) {
-      //           if (snapshot.data != null) {
-      //             return InkWell(
-      //               onTap: () => openUrl(snapshot.data['url']),
-      //               child: Container(
-      //                 child: Wrap(
-      //                   alignment: WrapAlignment.spaceEvenly,
-      //                   children: [
-      //                     Text('Name: ${snapshot.data['name']}'),
-      //                     Text('Followers: ${snapshot.data['followers']}'),
-      //                     Text('Following: ${snapshot.data['following']}'),
-      //                     Text('PublicRepos: ${snapshot.data['public_repos']}'),
-      //                   ],
-      //                 ),
-      //               ),
-      //             );
-      //           } else {
-      //             return Container(
-      //               child: Center(
-      //                 child: GFLoader(
-      //                   size: 30,
-      //                 ),
-      //               ),
-      //             );
-      //           }
-      //         },
-      //       ),
-      //     ],
-      //   ),
-      // );
       child: InkWell(
-        onDoubleTap: () => openUrl(i['html_url']),
+        onTap: () => openUrl(i['html_url']),
         child: GFCard(
           boxFit: BoxFit.cover,
           padding: EdgeInsets.all(10),
@@ -302,77 +236,104 @@ class _MyHomePageState extends State<MyHomePage> {
                 softWrap: true,
                 textAlign: TextAlign.center,
                 text: TextSpan(
-                    text: i['login'],
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
+                  text: i['name'],
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          buttonBar: !showAll
+              ? GFButtonBar()
+              : GFButtonBar(
+                  alignment: WrapAlignment.spaceEvenly,
+                  crossAxisAlignment: WrapCrossAlignment.start,
+                  spacing: 5,
+                  children: <Widget>[
+                    FutureBuilder(
+                      future: getProfile(i['url']),
+                      builder: (context, snapshot) {
+                        if (snapshot.hasData) {
+                          return Column(
+                            children: [
+                              Text(
+                                'Name: ${snapshot.data['name']}',
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                              Text('Followers: ${snapshot.data['followers']}'),
+                              Text('Following: ${snapshot.data['following']}'),
+                              Text(
+                                  'PublicRepos: ${snapshot.data['public_repos']}'),
+                            ],
+                          );
+                        } else
+                          return GFLoader();
+                      },
                     ),
-                    children: [
-                      TextSpan(text: '\nContributions:  ${i['contributions']}'),
-                      TextSpan(
-                          text: ml.contains(i['login'])
-                              ? '\nCompleted 5 PRs 🌟!'
-                              : '\n'),
-                    ]),
-              ),
-            ],
-          ),
-          buttonBar: GFButtonBar(
-            alignment: WrapAlignment.spaceEvenly,
-            crossAxisAlignment: WrapCrossAlignment.start,
-            spacing: 5,
-            children: <Widget>[
-              FutureBuilder(
-                future: getProfile(i['url']),
-                builder: (context, snapshot) {
-                  if (snapshot.hasData) {
-                    return Column(
-                      children: [
-                        Text('Followers: ${snapshot.data['followers']}'),
-                        Text('Following: ${snapshot.data['following']}'),
-                        Text('PublicRepos: ${snapshot.data['public_repos']}'),
-                      ],
-                    );
-                  } else
-                    return GFLoader(
-                      type: GFLoaderType.custom,
-                      loaderIconOne: Text('Please'),
-                      loaderIconTwo: Text('Wait'),
-                      loaderIconThree: Text('a moment'),
-                    );
-                },
-              ),
-              // Text('Followers: ${i['followers']}'),
-              // Text('Following: ${i['following']}'),
-              // Text('PublicRepos: ${i['public_repos']}'),
-            ],
-          ),
+                  ],
+                ),
         ),
       ),
     );
   }
 
-  Future<List> _getData() async {
-    Map<String, dynamic> linkMap;
-
-    List allData = [];
-    data = [];
-    final mainurl = 'https://api.github.com/repos/Hackodex-ITER/CSES-Problems';
-    var resp = await http.get(mainurl + '/contributors');
+  Future<List> _mainContributors() async {
+    var allData = [];
+    final contriurl =
+        'https://raw.githubusercontent.com/Hackodex-ITER/CSES-Problems/master/CONTRIBUTORS.md';
+    var resp = await http.get(contriurl);
     // print(resp.statusCode);
     if (resp.statusCode == 200) {
-      var jsonData = json.decode(resp.body);
+      var pdata = resp.body;
+      // print(pdata);
+      String s =
+          pdata.toString().trim().split('### We have Completed 5 Problems')[1];
+      // var x = (s.split('> <img src='));
+      contributors = s.split('> <img src="');
       setState(() {
-        totcont = jsonData.toString().split('},').length;
+        totcont = contributors.length;
+        // print(totcont);
       });
-      for (var item in jsonData) {
-        data.add(item);
-        // await getProfile(item, linkMap, allData);
-      }
+      // print(contributors[contributors.length - 1]);
+      for (var i = 1; i < contributors.length; i++) {
+        // print(contributors[i]);
+        if (contributors[i] == null) continue;
+        var avtUrl =
+            contributors[i].substring(0, contributors[i].indexOf("\""));
+        var name = contributors[i].substring(
+            contributors[i].indexOf("[") + 1, contributors[i].indexOf("]"));
+        var x = contributors[i].split('https://github.com/')[1].toString();
+        var githubId = x.substring(0, x.length - 3);
+        if (githubId.contains('/'))
+          githubId = githubId.substring(0, githubId.length - 1);
+        // else
+        //   githubId = githubId.substring(0, githubId.length - 1);
 
-      return data;
+        // print(githubId.contains('/'));
+        // print(name);
+        // print(githubId);
+        // setState(() {
+        //   names += contributors[i] + ',';
+        // });
+        var linkMap = ({
+          'avatar_url': avtUrl,
+          'name': name,
+          'html_url': 'https://github.com/$githubId',
+          'url': 'https://api.github.com/users/$githubId',
+          'login': githubId
+        });
+        // print(linkMap.toString() + '\n\n');
+        allData.add(json.decode(json.encode(linkMap)));
+      }
+      // setState(() {
+      //   ml = names;
+      // });
+      // print('Main Contributors Fetched!');
+      return allData;
     }
-    return data;
+    return allData;
   }
 
   Future getProfile(String url) async {
@@ -392,33 +353,5 @@ class _MyHomePageState extends State<MyHomePage> {
       });
       return (json.decode(json.encode(linkMap)));
     }
-  }
-
-  Future<void> _mainContributors() async {
-    String names = '';
-    final contriurl =
-        'https://raw.githubusercontent.com/Hackodex-ITER/CSES-Problems/master/CONTRIBUTORS.md';
-    var resp = await http.get(contriurl);
-    // print(resp.statusCode);
-    if (resp.statusCode == 200) {
-      var pdata = resp.body;
-      String s =
-          pdata.toString().trim().split('### We have Completed 5 Problems')[1];
-      // print(s.split('> <img'));
-      contributors = s.split('https://github.com/');
-      for (var i = 1; i < contributors.length; i++) {
-        contributors[i] = contributors[i].split(')')[0];
-        if (contributors[i].contains('/'))
-          contributors[i] =
-              contributors[i].substring(0, contributors[i].length - 1);
-        setState(() {
-          names += contributors[i] + ',';
-        });
-      }
-    }
-    setState(() {
-      ml = names;
-    });
-    print('Main Contributors Fetched!');
   }
 }
