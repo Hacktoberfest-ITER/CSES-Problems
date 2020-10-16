@@ -1,19 +1,20 @@
-
 # CONTRIBUTORS
 
 ## Add you Name in Contributors
+
 These are the list of contributors to this project **who have completed 5 problems**.
+
 - **Note: Make this changes with the last question PR or else your Hacktober Fest PR may get rejected**
-> ## How to edit it
->
-> - Replace image with your github image by copying the image link
-    `> <img src="github image link" width="50"> `
-> - then add your name & link of your Profile in given format in next line
-    `[Name](https://github.com/UserName)`
-> - Final Code `> <img src="github image link" width="50"> [Name](https://github.com/UserName)`
-> - While making PR mention your name in it.
-> 
-> #### NOTE: Before making PR make sure to check if everything is ok in preview section
+ > ## How to edit it
+ >
+ > - Replace image with your github image by copying the image link
+     `> <img src="github image link" width="50"> `
+ > - then add your name & link of your Profile in given format in next line
+     `[Name](https://github.com/UserName)`
+ > - Final Code `> <img src="github image link" width="50"> [Name](https://github.com/UserName)`
+ > - While making PR mention your name in it.
+ >
+ > #### NOTE: Before making PR make sure to check if everything is ok in preview section
 
 # Main Contributors
 
@@ -101,3 +102,4 @@ These are the list of contributors to this project **who have completed 5 proble
 
 > <img src="https://avatars3.githubusercontent.com/u/61560828?s=460&u=d04ff431560bf91b4c611a092dda04d8f34b887c&v=4" width="50"> [Siddhant Jaiswal](https://github.com/SiddhantJaiswal-0125)
 
+> <img src="https://avatars2.githubusercontent.com/u/48730894?s=400&u=9300f22370740e1438430c32488948a20ddbcf87&v=4" width="50"> [Subhransu Dash](https://github.com/Ashis-007)
