@@ -5,16 +5,16 @@
 These are the list of contributors to this project **who have completed 5 problems**.
 
 - **Note: Make this changes with the last question PR or else your Hacktober Fest PR may get rejected**
-  > ## How to edit it
-  >
-  > - Replace image with your github image by copying the image link
-      `> <img src="github image link" width="50"> `
-  > - then add your name & link of your Profile in given format in next line
-      `[Name](https://github.com/UserName)`
-  > - Final Code `> <img src="github image link" width="50"> [Name](https://github.com/UserName)`
-  > - While making PR mention your name in it.
-  >
-  > #### NOTE: Before making PR make sure to check if everything is ok in preview section
+ > ## How to edit it
+ >
+ > - Replace image with your github image by copying the image link
+     `> <img src="github image link" width="50"> `
+ > - then add your name & link of your Profile in given format in next line
+     `[Name](https://github.com/UserName)`
+ > - Final Code `> <img src="github image link" width="50"> [Name](https://github.com/UserName)`
+ > - While making PR mention your name in it.
+ >
+ > #### NOTE: Before making PR make sure to check if everything is ok in preview section
 
 # Main Contributors
 
