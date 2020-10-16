@@ -17,28 +17,61 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  List data = [];
+  Future<List> data;
+  List allData = [];
   List<String> contributors = [];
   String ml = '';
   bool showAll = false;
+  bool onSearch = false;
   int totcont = 0;
+  @override
+  void initState() {
+    setState(() {
+      data = _mainContributors();
+    });
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // bottomSheet: buildGfSearchBar(),
       appBar: AppBar(
-        title: Text(widget.title),
-        leading: GFAvatar(
-          radius: 15,
-          backgroundImage: AssetImage('assets/hackodex.png'),
+        title: Container(
+          child: buildGfSearchBar(),
+          width: MediaQuery.of(context).size.width * 0.4,
+        ),
+        centerTitle: true,
+        leadingWidth: MediaQuery.of(context).size.width * 0.2,
+        leading: Container(
+          padding: EdgeInsets.symmetric(horizontal: 2, vertical: 5),
+          child: Wrap(
+            alignment: WrapAlignment.center,
+            crossAxisAlignment: WrapCrossAlignment.center,
+            runAlignment: WrapAlignment.spaceEvenly,
+            children: [
+              GFAvatar(
+                radius: 15,
+                backgroundImage: AssetImage('assets/hackodex.png'),
+              ),
+              Text(
+                'HACKODEX',
+                style: TextStyle(
+                    // fontSize: 10,
+                    fontWeight: FontWeight.bold),
+                overflow: TextOverflow.ellipsis,
+                textAlign: TextAlign.center,
+              )
+            ],
+          ),
         ),
         backgroundColor: Color(0xFF072540),
         automaticallyImplyLeading: false,
         actions: [
-          Row(
+          Column(
             children: [
               Text(
-                'Show More Details  ',
+                'Show Details  ',
                 style: TextStyle(color: Colors.white),
               ),
               GFToggle(
@@ -75,7 +108,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     children: [
                       GFCard(
                         borderRadius: BorderRadius.circular(20),
-                        borderOnForeground: true,
                         color: Color(0xFF072541),
                         image: Image.network(
                           'https://github.com/Hackodex-ITER/Hackodex-ITER/blob/master/Hacktober.png?raw=true',
@@ -157,7 +189,15 @@ class _MyHomePageState extends State<MyHomePage> {
                     overflow: TextOverflow.visible,
                     style: TextStyle(fontSize: 10),
                   ),
-                  buildFutureBuilder(),
+                  SingleChildScrollView(
+                    child: Wrap(
+                        // spacing: 8.0, // gap between adjacent chips
+                        // runSpacing: 4.0, // gap between lines
+                        direction: Axis.horizontal,
+                        children: [
+                          for (var item in allData) profileCard(item),
+                        ]),
+                  ),
                   SizedBox(
                     height: 20,
                   ),
@@ -177,42 +217,43 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
+  Widget buildGfSearchBar() {
+    return GFSearchBar(
+      searchBoxInputDecoration: InputDecoration(
+          hintText: 'Your Name',
+          hintStyle:
+              TextStyle(fontWeight: FontWeight.w400, color: Colors.white54)),
+      searchList: allData,
+      searchQueryBuilder: (query, allData) {
+        return allData
+            .where((item) =>
+                item['name'].toLowerCase().contains(query.toLowerCase()))
+            .toList();
+      },
+      overlaySearchListItemBuilder: (item) {
+        return Container(
+          padding: const EdgeInsets.all(8),
+          child: Text(
+            item['name'],
+            style: const TextStyle(fontSize: 18),
+          ),
+        );
+      },
+      onItemSelected: (item) {
+        setState(() {
+          openUrl('http://github.com/${item['login']}');
+          print('${item['login']}');
+        });
+      },
+    );
+  }
+
   void openUrl(String url) async {
     if (await canLaunch(url)) {
       await launch(url, forceSafariVC: false);
     } else {
       throw 'Could not launch $url';
     }
-  }
-
-  FutureBuilder<List> buildFutureBuilder() {
-    return FutureBuilder(
-      future: _mainContributors(),
-      builder: (BuildContext context, AsyncSnapshot snapshot) {
-        // print(snapshot.data);
-        if (snapshot.data != null) {
-          return SingleChildScrollView(
-            child: Wrap(
-              // spacing: 8.0, // gap between adjacent chips
-              // runSpacing: 4.0, // gap between lines
-              direction: Axis.horizontal,
-              children: snapshot.data
-                  .map((item) => profileCard(item))
-                  .toList()
-                  .cast<Widget>(),
-            ),
-          );
-        } else {
-          return Container(
-            child: Center(
-              child: GFLoader(
-                size: 100,
-              ),
-            ),
-          );
-        }
-      },
-    );
   }
 
   Widget profileCard(var i) {
@@ -222,6 +263,7 @@ class _MyHomePageState extends State<MyHomePage> {
         onTap: () => openUrl(i['html_url']),
         child: GFCard(
           boxFit: BoxFit.cover,
+          borderRadius: BorderRadius.circular(20),
           padding: EdgeInsets.all(10),
           elevation: 5,
           gradient:
@@ -236,12 +278,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 softWrap: true,
                 textAlign: TextAlign.center,
                 text: TextSpan(
-                  text: i['name'],
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
+                    text: i['name'],
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    children: [
+                      TextSpan(
+                          text: '\n${i['login']}',
+                          style: TextStyle(fontWeight: FontWeight.normal))
+                    ]),
               ),
             ],
           ),
@@ -258,10 +304,13 @@ class _MyHomePageState extends State<MyHomePage> {
                         if (snapshot.hasData) {
                           return Column(
                             children: [
-                              Text(
-                                'Name: ${snapshot.data['name']}',
-                                style: TextStyle(fontWeight: FontWeight.bold),
-                              ),
+                              if (snapshot.data['bio'] != null)
+                                Text(
+                                  'Bio: ${snapshot.data['bio'].trim()}',
+                                  overflow: TextOverflow.ellipsis, maxLines: 2,
+                                  textAlign: TextAlign.justify,
+                                  // style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
                               Text('Followers: ${snapshot.data['followers']}'),
                               Text('Following: ${snapshot.data['following']}'),
                               Text(
@@ -280,7 +329,6 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Future<List> _mainContributors() async {
-    var allData = [];
     final contriurl =
         'https://raw.githubusercontent.com/Hackodex-ITER/CSES-Problems/master/CONTRIBUTORS.md';
     var resp = await http.get(contriurl);
@@ -304,19 +352,12 @@ class _MyHomePageState extends State<MyHomePage> {
             contributors[i].substring(0, contributors[i].indexOf("\""));
         var name = contributors[i].substring(
             contributors[i].indexOf("[") + 1, contributors[i].indexOf("]"));
-        var x = contributors[i].split('https://github.com/')[1].toString();
-        var githubId = x.substring(0, x.length - 3);
+        var x =
+            contributors[i].split('https://github.com/')[1].toString().trim();
+        var githubId = x.substring(0, x.length - 1);
         if (githubId.contains('/'))
           githubId = githubId.substring(0, githubId.length - 1);
-        // else
-        //   githubId = githubId.substring(0, githubId.length - 1);
-
-        // print(githubId.contains('/'));
-        // print(name);
         // print(githubId);
-        // setState(() {
-        //   names += contributors[i] + ',';
-        // });
         var linkMap = ({
           'avatar_url': avtUrl,
           'name': name,
@@ -325,12 +366,10 @@ class _MyHomePageState extends State<MyHomePage> {
           'login': githubId
         });
         // print(linkMap.toString() + '\n\n');
-        allData.add(json.decode(json.encode(linkMap)));
+        setState(() {
+          allData.add(json.decode(json.encode(linkMap)));
+        });
       }
-      // setState(() {
-      //   ml = names;
-      // });
-      // print('Main Contributors Fetched!');
       return allData;
     }
     return allData;
