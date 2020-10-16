@@ -4,7 +4,6 @@ import 'package:hackodex/MyHomePage.dart';
 void main() {
   runApp(MyApp());
 }
-// TODO: add md reader and use it for displaying contributing.md
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -14,7 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'HACKODEX',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.deepPurple,
       ),
       home: MyHomePage(title: 'HACKODEX'),
     );

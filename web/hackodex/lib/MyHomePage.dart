@@ -3,6 +3,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
+import 'package:hackodex/MarkdownView.dart';
 import 'package:http/http.dart' as http;
 import 'package:line_awesome_icons/line_awesome_icons.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -24,6 +25,8 @@ class _MyHomePageState extends State<MyHomePage> {
   bool showAll = false;
   bool onSearch = false;
   int totcont = 0;
+
+  String mdContributing;
   @override
   void initState() {
     setState(() {
@@ -35,7 +38,6 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // bottomSheet: buildGfSearchBar(),
       appBar: AppBar(
         title: Container(
           child: buildGfSearchBar(),
@@ -113,6 +115,25 @@ class _MyHomePageState extends State<MyHomePage> {
                           'https://github.com/Hackodex-ITER/Hackodex-ITER/blob/master/Hacktober.png?raw=true',
                           fit: BoxFit.scaleDown,
                           width: MediaQuery.of(context).size.width / 2,
+                        ),
+                      ),
+                      InkWell(
+                        onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) =>
+                                MarkdownViewer(mdContributing),
+                          ),
+                        ),
+                        child: Center(
+                          child: Text(
+                            'Click here! to know how to CONRIBUTE in this repo',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: Color(0xFF072540),
+                                fontStyle: FontStyle.italic,
+                                fontWeight: FontWeight.bold),
+                          ),
                         ),
                       ),
                       GFCard(
@@ -329,22 +350,27 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Future<List> _mainContributors() async {
+    final contributing =
+        'https://raw.githubusercontent.com/Hackodex-ITER/CSES-Problems/master/CONTRIBUTING.md';
+    var r = await http.get(contributing);
+    if (r.statusCode == 200)
+      setState(() {
+        mdContributing = r.body;
+      });
+
     final contriurl =
         'https://raw.githubusercontent.com/Hackodex-ITER/CSES-Problems/master/CONTRIBUTORS.md';
     var resp = await http.get(contriurl);
     // print(resp.statusCode);
     if (resp.statusCode == 200) {
       var pdata = resp.body;
-      // print(pdata);
+
       String s =
           pdata.toString().trim().split('### We have Completed 5 Problems')[1];
-      // var x = (s.split('> <img src='));
       contributors = s.split('> <img src="');
       setState(() {
         totcont = contributors.length;
-        // print(totcont);
       });
-      // print(contributors[contributors.length - 1]);
       for (var i = 1; i < contributors.length; i++) {
         // print(contributors[i]);
         if (contributors[i] == null) continue;

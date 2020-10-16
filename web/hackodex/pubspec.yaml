@@ -9,6 +9,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.0
+  flutter_markdown: ^0.4.4
   getwidget: ^1.2.2
   html: ^0.14.0+4
   http: ^0.12.2
