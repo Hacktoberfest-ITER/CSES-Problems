@@ -5,16 +5,16 @@
 These are the list of contributors to this project **who have completed 5 problems**.
 
 - **Note: Make this changes with the last question PR or else your Hacktober Fest PR may get rejected**
- > ## How to edit it
- >
- > - Replace image with your github image by copying the image link
-     `> <img src="github image link" width="50"> `
- > - then add your name & link of your Profile in given format in next line
-     `[Name](https://github.com/UserName)`
- > - Final Code `> <img src="github image link" width="50"> [Name](https://github.com/UserName)`
- > - While making PR mention your name in it.
- >
- > #### NOTE: Before making PR make sure to check if everything is ok in preview section
+> ## How to edit it
+>
+> - Replace image with your github image by copying the image link
+    `> <img src="github image link" width="50"> `
+> - then add your name & link of your Profile in given format in next line
+    `[Name](https://github.com/UserName)`
+> - Final Code `> <img src="github image link" width="50"> [Name](https://github.com/UserName)`
+> - While making PR mention your name in it.
+>
+> #### NOTE: Before making PR make sure to check if everything is ok in preview section
 
 # Main Contributors
 
@@ -94,6 +94,9 @@ These are the list of contributors to this project **who have completed 5 proble
 
 > <img src="https://avatars2.githubusercontent.com/u/42293958?s=460&u=5badb6c27808a289900552fbdd3bdb8ae8f7e1e1&v=4" width="50"> [Subham Sagar Paira](https://github.com/subhamsagar524/)
 
+
+> <img src="https://avatars1.githubusercontent.com/u/44501265?s=460&u=735a8a890ce7a0cf5c1b700ee2b9c2cf1a26b916&v=4" width="50"> [Jyoti Jayadeep Jena](https://github.com/obli99/)
+
 > <img src="https://avatars3.githubusercontent.com/u/60312522?s=460&u=5a24e94980fba2d98e4812c893372d5ab987a66c&v=4" width="50"> [Lipsa Mishra](https://github.com/lipsamishra1609/)
 
 > <img src="https://avatars0.githubusercontent.com/u/53703526?s=400&v=4" width="50"> [Aditya Sharma](https://github.com/itsjohnty)
@@ -103,3 +106,4 @@ These are the list of contributors to this project **who have completed 5 proble
 > <img src="https://avatars3.githubusercontent.com/u/61560828?s=460&u=d04ff431560bf91b4c611a092dda04d8f34b887c&v=4" width="50"> [Siddhant Jaiswal](https://github.com/SiddhantJaiswal-0125)
 
 > <img src="https://avatars2.githubusercontent.com/u/48730894?s=400&u=9300f22370740e1438430c32488948a20ddbcf87&v=4" width="50"> [Subhransu Dash](https://github.com/Ashis-007)
+
