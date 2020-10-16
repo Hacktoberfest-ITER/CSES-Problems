@@ -106,4 +106,6 @@ These are the list of contributors to this project **who have completed 5 proble
 
 > <img src="https://avatars2.githubusercontent.com/u/48730894?s=400&u=9300f22370740e1438430c32488948a20ddbcf87&v=4" width="50"> [Subhransu Dash](https://github.com/Ashis-007)
 
-> <img src="https://avatars3.githubusercontent.com/u/53336715?v=4" width="50"> [Bravish Ghosh](https://github.com/LoopGlitch26/)
+> <img src="https://avatars1.githubusercontent.com/u/53336715?s=460&u=f7716ac9e0b6bbf56e97f9622ae005bd0fa8dc8e&v=4" width="50"> [Bravish Ghosh](https://github.com/LoopGlitch26/)
+
+> <img src="https://avatars2.githubusercontent.com/u/53439283?s=400&u=52f3ed030e21e74d387f5a1fdca9035413bd0828&v=4" width="50"> [Sourav Kumar Prusty](https://github.com/SouravReal)
