@@ -4,9 +4,9 @@
 // https://cses.fi/user/25504
 // PROBLEM NUMBER
 // https://cses.fi/problemset/task/1069
-// Repetition
+// You are given a DNA sequence: a string consisting of characters A, C, G, and T. Your task is to find the longest repetition in the sequence. This is a maximum-length substring containing only one type of character.
  
-public class Stuti_Repetition {
+public class JainStuti25_Repetition {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String str = scanner.next();
