@@ -94,7 +94,6 @@ These are the list of contributors to this project **who have completed 5 proble
 
 > <img src="https://avatars2.githubusercontent.com/u/42293958?s=460&u=5badb6c27808a289900552fbdd3bdb8ae8f7e1e1&v=4" width="50"> [Subham Sagar Paira](https://github.com/subhamsagar524/)
 
-
 > <img src="https://avatars1.githubusercontent.com/u/44501265?s=460&u=735a8a890ce7a0cf5c1b700ee2b9c2cf1a26b916&v=4" width="50"> [Jyoti Jayadeep Jena](https://github.com/obli99/)
 
 > <img src="https://avatars3.githubusercontent.com/u/60312522?s=460&u=5a24e94980fba2d98e4812c893372d5ab987a66c&v=4" width="50"> [Lipsa Mishra](https://github.com/lipsamishra1609/)
@@ -107,3 +106,4 @@ These are the list of contributors to this project **who have completed 5 proble
 
 > <img src="https://avatars2.githubusercontent.com/u/48730894?s=400&u=9300f22370740e1438430c32488948a20ddbcf87&v=4" width="50"> [Subhransu Dash](https://github.com/Ashis-007)
 
+> <img src="https://avatars3.githubusercontent.com/u/53336715?v=4" width="50"> [Bravish Ghosh](https://github.com/LoopGlitch26/)
