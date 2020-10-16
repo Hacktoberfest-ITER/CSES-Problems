@@ -4,9 +4,10 @@
 // https://cses.fi/user/25504
 // PROBLEM NUMBER
 // https://cses.fi/problemset/task/1070
-// Permutations
+// A permutation of integers 1,2,…,n is called beautiful if there are no adjacent elements whose difference is 1.
+//Given n, construct a beautiful permutation if such a permutation exists.
 
-public class Stuti_Permutation {
+public class JainStuti25_Permutation {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         long n = sc.nextInt();
