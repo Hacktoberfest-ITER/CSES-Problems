@@ -23,4 +23,5 @@ int main(){
     return 0;
 }
 //author : Pratik Sonal
+//CSES profile : https://cses.fi/user/34290
 //solution : https://cses.fi/problemset/result/1140773/
