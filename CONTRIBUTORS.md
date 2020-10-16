@@ -19,6 +19,8 @@ These are the list of contributors to this project **who have completed 5 proble
 
 ### We have Completed 5 Problems
 
+> <img src="https://avatars3.githubusercontent.com/u/53336715?v=4" width="50"> [Bravish Ghosh](https://github.com/LoopGlitch26/)
+
 > <img src="https://avatars0.githubusercontent.com/u/53415956?s=50&u=36af1e2bed940f8d45769feef50cb564cec69c29&v=4" width="50"> [Ayush Kejariwal](https://github.com/KejariwalAyush/)
 
 > <img src="https://avatars3.githubusercontent.com/u/53283341?s=50&u=ca203c1993d22c6ddc81914ab1d43a1ebe8f3586&v=4" width="50"> [Shruti Mallick](https://github.com/ShrutiMallick/)
