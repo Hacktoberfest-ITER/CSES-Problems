@@ -27,6 +27,8 @@ class _MyHomePageState extends State<MyHomePage> {
   int totcont = 0;
 
   String mdContributing;
+
+  var controller = new ScrollController();
   @override
   void initState() {
     setState(() {
@@ -101,135 +103,138 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           Center(
-            child: SingleChildScrollView(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: <Widget>[
-                  Wrap(
-                    direction: Axis.horizontal,
-                    children: [
-                      GFCard(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Color(0xFF072541),
-                        image: Image.network(
-                          'https://github.com/Hackodex-ITER/Hackodex-ITER/blob/master/Hacktober.png?raw=true',
-                          fit: BoxFit.scaleDown,
-                          width: MediaQuery.of(context).size.width / 2,
-                        ),
-                      ),
-                      InkWell(
-                        onTap: () => Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) =>
-                                MarkdownViewer(mdContributing),
+            child: Scrollbar(
+              controller: controller,
+              child: SingleChildScrollView(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    Wrap(
+                      direction: Axis.horizontal,
+                      children: [
+                        GFCard(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Color(0xFF072541),
+                          image: Image.network(
+                            'https://github.com/Hackodex-ITER/Hackodex-ITER/blob/master/Hacktober.png?raw=true',
+                            fit: BoxFit.scaleDown,
+                            width: MediaQuery.of(context).size.width / 2,
                           ),
                         ),
-                        child: Center(
-                          child: Text(
-                            'Click here! to know how to CONRIBUTE in this repo',
+                        InkWell(
+                          onTap: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) =>
+                                  MarkdownViewer(mdContributing),
+                            ),
+                          ),
+                          child: Center(
+                            child: Text(
+                              'Click here! to know how to CONRIBUTE in this repo',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  color: Color(0xFF072540),
+                                  fontStyle: FontStyle.italic,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                        ),
+                        GFCard(
+                          boxFit: BoxFit.fitHeight,
+                          color: Color(0xFF072541),
+                          borderOnForeground: true,
+                          borderRadius: BorderRadius.circular(20),
+                          elevation: 50,
+                          title: GFListTile(
+                            title: Text(
+                              'About Us:',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
+                          content: Text(
+                            "We Code We Explore !\nThe only coding club of ITER, SOA University.",
                             textAlign: TextAlign.center,
-                            style: TextStyle(
-                                color: Color(0xFF072540),
-                                fontStyle: FontStyle.italic,
-                                fontWeight: FontWeight.bold),
-                          ),
-                        ),
-                      ),
-                      GFCard(
-                        boxFit: BoxFit.fitHeight,
-                        color: Color(0xFF072541),
-                        borderOnForeground: true,
-                        borderRadius: BorderRadius.circular(20),
-                        elevation: 50,
-                        title: GFListTile(
-                          title: Text(
-                            'About Us:',
                             style: TextStyle(color: Colors.white),
                           ),
+                          buttonBar: GFButtonBar(
+                            direction: Axis.horizontal,
+                            children: <Widget>[
+                              GFButton(
+                                onPressed: () =>
+                                    openUrl('https://github.com/codex-iter'),
+                                text: 'GitHub',
+                                icon: Icon(LineAwesomeIcons.github),
+                              ),
+                              GFButton(
+                                onPressed: () => openUrl(
+                                    'https://www.youtube.com/channel/UCu1S3gm2ODknxDlkpPX2RrA'),
+                                text: 'YouTube',
+                                icon: Icon(LineAwesomeIcons.youtube),
+                              ),
+                              GFButton(
+                                onPressed: () => openUrl(
+                                    'https://www.instagram.com/codexiter/'),
+                                text: 'Instagram',
+                                icon: Icon(LineAwesomeIcons.instagram),
+                              ),
+                              GFButton(
+                                onPressed: () => openUrl(
+                                    'https://www.linkedin.com/company/codexiter/'),
+                                text: 'LinkedIn',
+                                icon: Icon(LineAwesomeIcons.linkedin),
+                              ),
+                              GFButton(
+                                onPressed: () => openUrl(
+                                    'https://www.facebook.com/codexiter/'),
+                                text: 'Facebook',
+                                icon: Icon(LineAwesomeIcons.facebook),
+                              ),
+                            ],
+                          ),
                         ),
-                        content: Text(
-                          "We Code We Explore !\nThe only coding club of ITER, SOA University.",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.white),
-                        ),
-                        buttonBar: GFButtonBar(
+                      ],
+                    ),
+                    Text(
+                      showAll
+                          ? 'All Contributors of Hackodex - CSES Problems'
+                          : 'Contributors Who have Completed 5 PRs',
+                      overflow: TextOverflow.visible,
+                      textAlign: TextAlign.center,
+                    ),
+                    Text(
+                      showAll
+                          ? 'Total Contributors: $totcont'
+                          : 'Contributors: ${contributors.length}',
+                      overflow: TextOverflow.visible,
+                      style: TextStyle(fontSize: 25),
+                    ),
+                    Text(
+                      'Click on card to see user profile\n',
+                      overflow: TextOverflow.visible,
+                      style: TextStyle(fontSize: 10),
+                    ),
+                    SingleChildScrollView(
+                      child: Wrap(
+                          // spacing: 8.0, // gap between adjacent chips
+                          // runSpacing: 4.0, // gap between lines
                           direction: Axis.horizontal,
-                          children: <Widget>[
-                            GFButton(
-                              onPressed: () =>
-                                  openUrl('https://github.com/codex-iter'),
-                              text: 'GitHub',
-                              icon: Icon(LineAwesomeIcons.github),
-                            ),
-                            GFButton(
-                              onPressed: () => openUrl(
-                                  'https://www.youtube.com/channel/UCu1S3gm2ODknxDlkpPX2RrA'),
-                              text: 'YouTube',
-                              icon: Icon(LineAwesomeIcons.youtube),
-                            ),
-                            GFButton(
-                              onPressed: () => openUrl(
-                                  'https://www.instagram.com/codexiter/'),
-                              text: 'Instagram',
-                              icon: Icon(LineAwesomeIcons.instagram),
-                            ),
-                            GFButton(
-                              onPressed: () => openUrl(
-                                  'https://www.linkedin.com/company/codexiter/'),
-                              text: 'LinkedIn',
-                              icon: Icon(LineAwesomeIcons.linkedin),
-                            ),
-                            GFButton(
-                              onPressed: () => openUrl(
-                                  'https://www.facebook.com/codexiter/'),
-                              text: 'Facebook',
-                              icon: Icon(LineAwesomeIcons.facebook),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                  Text(
-                    showAll
-                        ? 'All Contributors of Hackodex - CSES Problems'
-                        : 'Contributors Who have Completed 5 PRs',
-                    overflow: TextOverflow.visible,
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    showAll
-                        ? 'Total Contributors: $totcont'
-                        : 'Contributors: ${contributors.length}',
-                    overflow: TextOverflow.visible,
-                    style: TextStyle(fontSize: 25),
-                  ),
-                  Text(
-                    'Click on card to see user profile\n',
-                    overflow: TextOverflow.visible,
-                    style: TextStyle(fontSize: 10),
-                  ),
-                  SingleChildScrollView(
-                    child: Wrap(
-                        // spacing: 8.0, // gap between adjacent chips
-                        // runSpacing: 4.0, // gap between lines
-                        direction: Axis.horizontal,
-                        children: [
-                          for (var item in allData) profileCard(item),
-                        ]),
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Text(
-                    'THANKS FOR VISITING! 😁😎\nMADE WITH LOVE FOR HACKTOBERFEST BY Ayush Kejariwal💖✌',
-                    textAlign: TextAlign.center,
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                ],
+                          children: [
+                            for (var item in allData) profileCard(item),
+                          ]),
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Text(
+                      'THANKS FOR VISITING! 😁😎\nMADE WITH LOVE FOR HACKTOBERFEST BY Ayush Kejariwal💖✌',
+                      textAlign: TextAlign.center,
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
