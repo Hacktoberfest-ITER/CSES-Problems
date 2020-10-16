@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:upstream" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ef045071-892c-4a96-b587-bde24bb3b24e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/java/codysieg/codysieg_distinctnumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/codysieg/codysieg_missingnumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/codysieg/codysieg_repetitions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/codysieg/codysieg_trailingzeroes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/codysieg/codysieg_weird_algorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTRIBUTORS.md" beforeDir="false" afterPath="$PROJECT_DIR$/CONTRIBUTORS.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1iyBA4AZSeJUhD1D4nSm6nENpDm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\cody.siegmann\Documents\GitHub\CSES-Problems\java\codysieg" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.codysieg_repetitions">
+    <configuration name="codysieg_repetitions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codysieg_repetitions" />
+      <module name="CSES-Problems" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="codysieg_weird_algorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codysieg_weird_algorithm" />
+      <module name="CSES-Problems" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.codysieg_repetitions" />
+        <item itemvalue="Application.codysieg_weird_algorithm" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ef045071-892c-4a96-b587-bde24bb3b24e" name="Default Changelist" comment="" />
+      <created>1602869804255</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602869804255</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1878" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602870076237">
+      <screen x="-2560" y="-370" width="2560" height="1400" />
+    </state>
+    <state x="-1878" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-2560.-370.2560.1400@-2560.-370.2560.1400" timestamp="1602870076237" />
+    <state x="-1547" y="130" key="FileChooserDialogImpl" timestamp="1602869831373">
+      <screen x="-2560" y="-370" width="2560" height="1400" />
+    </state>
+    <state x="-1547" y="130" key="FileChooserDialogImpl/0.0.1920.1040/-2560.-370.2560.1400@-2560.-370.2560.1400" timestamp="1602869831373" />
+    <state x="-1852" y="1" key="SettingsEditor" timestamp="1602888949428">
+      <screen x="-2560" y="-370" width="2560" height="1400" />
+    </state>
+    <state x="-1852" y="1" key="SettingsEditor/0.0.1920.1040/-2560.-370.2560.1400@-2560.-370.2560.1400" timestamp="1602888949428" />
+    <state x="-1950" y="47" key="new project wizard" timestamp="1602870310965">
+      <screen x="-2560" y="-370" width="2560" height="1400" />
+    </state>
+    <state x="-1950" y="47" key="new project wizard/0.0.1920.1040/-2560.-370.2560.1400@-2560.-370.2560.1400" timestamp="1602870310965" />
+  </component>
+</project>
