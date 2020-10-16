@@ -4,6 +4,7 @@
 // https://cses.fi/user/25504
 // PROBLEM NUMBER
 // https://cses.fi/problemset/task/1094
+// Increasing Array
 
 public class Stuti_IncreasingArr {
     public static void main(String[] args) {
