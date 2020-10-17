@@ -90,3 +90,5 @@ These are the list of contributors to this project **who have completed 5 proble
 > <img src="https://avatars0.githubusercontent.com/u/53292445?s=400&u=d281c4eef56a9d6a151e88761ddf64df824ce416&v=4" width="50"> [Jigyasa-Samal](https://github.com/jigyasa-samal)
 
 > <img src="https://avatars3.githubusercontent.com/u/53367345?s=400&u=72e97079457e79b14a43ef6c88e7eadd79e103bf&v=4" width="50"> [A S V K Vinayak](https://github.com/ASVKVINAYAK)
+
+> <img src="https://avatars3.githubusercontent.com/u/53293250?s=400&u=83a124da28741dcbb4b9463bc55fb1da7e9b9a3c&v=4" width="50"> [Palak Srivastava](https://github.com/Palak-Srivastava)
