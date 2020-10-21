@@ -76,8 +76,6 @@ These are the list of contributors to this project **who have completed 5 proble
 
 > <img src="https://avatars0.githubusercontent.com/u/54390873?s=50&u=9d5f426d3b9484be68a485e0b0a9f122aff2c0e4&v=4" width="50"> [Kshitiz Ranjan](https://github.com/kshitizranjan15)
 
-> <img src="https://avatars1.githubusercontent.com/u/53288567?s=400&u=affbca75ed842d8471ee39b7ff0e80987607f359&v=4" width="50"> [Sonu Kumar Sharma](https://github.com/Sharma-chanism)
-
 > <img src="https://avatars0.githubusercontent.com/u/53207299?s=460&u=fc6a1bc63de723c575b55174f269ce91cbe9ed8e&v=4" width="50"> [Tarique Nasar](https://github.com/NasarTarique)
 
 > <img src="https://avatars1.githubusercontent.com/u/45062304?s=460&u=49d748b5c69f6361e559289b22e78ebb46bf8129&v=4" width="50"> [Ankita Satapathy](https://github.com/ankita-04/)
@@ -121,3 +119,5 @@ These are the list of contributors to this project **who have completed 5 proble
 > <img src="https://avatars0.githubusercontent.com/u/52209941?s=460&u=10cdd32a6dffc5d10e4dfd6d46821e59fbff5ca6&v=4" width="50"> [Saurabh Nikam](https://github.com/saurabh-nikam/)
 
 > <img src="https://avatars1.githubusercontent.com/u/53162729?s=400&u=16783675e602b7de353919c32357c7e12bc69ee3&v=4" width="50"> [Sahil Agarwal](https://github.com/agarwalsahil0210)
+
+> <img src="https://avatars1.githubusercontent.com/u/53288567?s=400&u=affbca75ed842d8471ee39b7ff0e80987607f359&v=4" width="50"> [Sonu Kumar Sharma](https://github.com/Sharma-chanism)
