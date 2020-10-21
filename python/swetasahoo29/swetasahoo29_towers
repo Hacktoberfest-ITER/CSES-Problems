@@ -1,0 +1,18 @@
+# PROBLEM NUMBER
+# https://cses.fi/problemset/task/1073
+# Sweta Snigdha Sahoo
+# author : swetasahoo29
+# QUESTION
+# You are given n cubes in a certain order, and your task is to build towers using them. Whenever two cubes are one on top of the other, the upper cube must be smaller than the lower cube.
+
+# You must process the cubes in the given order. You can always either place the cube on top of an existing tower, or begin a new tower. What is the minimum possible number of towers?
+from bisect import bisect_right
+l,t,n,x=[],0,int(input()),[int(i)for i in input().split()]
+for i in x:
+    b=bisect_right(l,i)
+    if b>=t:
+        l+=[i]
+        t+=1
+    else:
+        l[b]=i
+print(t)

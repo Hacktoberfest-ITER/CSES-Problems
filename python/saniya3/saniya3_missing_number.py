@@ -1,4 +1,5 @@
-# Missing number
+# Missing number:
+# You are given all numbers between 1,2,…,n except one.Your task is to find the missing number.
 # https://cses.fi/problemset/task/1083/
 
 n=int(input())
