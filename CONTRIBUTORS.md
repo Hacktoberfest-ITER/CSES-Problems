@@ -20,17 +20,3 @@ These are the list of contributors to this project **who have completed 5 proble
 
 ### We have Completed 5 Problems
 
-> ![Ayush Kejariwal](https://avatars0.githubusercontent.com/u/53415956?s=50&u=36af1e2bed940f8d45769feef50cb564cec69c29&v=4) 
-> [Ayush Kejariwal](https://github.com/KejariwalAyush/)
-
->![Shruti Mallick](https://avatars3.githubusercontent.com/u/53283341?s=50&u=ca203c1993d22c6ddc81914ab1d43a1ebe8f3586&v=4)
->[Shruti Mallick](https://github.com/ShrutiMallick/)
-
-> ![Ayush Kumar Sahoo](https://avatars0.githubusercontent.com/u/54541820?s=50&u=f502c71c7cd15ef5c6358835ba3729c83b2adc32&v=4)
-> [Ayush Kumar Sahoo](https://github.com/Ayushkumarsahoo)
-
-> ![Suvam Pattnaik](https://avatars3.githubusercontent.com/u/53616716?s=50&u=2fe91488e7a8f06888b4ba8e5e9b6ccefa7933e2&v=4)
-> [Suvam Pattnaik](https://github.com/Suvamrx)
-
-> ![Sudeep Swaink](https://avatars2.githubusercontent.com/u/53346605?s=50&u=3123e8b1d21be6142c5250360fc1ccd6939bbd61&v=4)
-> [Sudeep Swain](https://github.com/Sudeep25022000)
