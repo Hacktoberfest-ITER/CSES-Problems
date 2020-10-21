@@ -76,6 +76,8 @@ These are the list of contributors to this project **who have completed 5 proble
 
 > <img src="https://avatars0.githubusercontent.com/u/54390873?s=50&u=9d5f426d3b9484be68a485e0b0a9f122aff2c0e4&v=4" width="50"> [Kshitiz Ranjan](https://github.com/kshitizranjan15)
 
+> <img src="https://avatars1.githubusercontent.com/u/53288567?s=400&u=affbca75ed842d8471ee39b7ff0e80987607f359&v=4" width="50"> [Sonu Kumar Sharma](https://github.com/Sharma-chanism)
+
 > <img src="https://avatars0.githubusercontent.com/u/53207299?s=460&u=fc6a1bc63de723c575b55174f269ce91cbe9ed8e&v=4" width="50"> [Tarique Nasar](https://github.com/NasarTarique)
 
 > <img src="https://avatars1.githubusercontent.com/u/45062304?s=460&u=49d748b5c69f6361e559289b22e78ebb46bf8129&v=4" width="50"> [Ankita Satapathy](https://github.com/ankita-04/)
