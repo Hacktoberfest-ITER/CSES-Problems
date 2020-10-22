@@ -116,4 +116,4 @@ These are the list of contributors to this project **who have completed 5 proble
 
 > <img src="https://avatars0.githubusercontent.com/u/53379005?s=400&u=a852e463c8cbae7653bf7651c0844b384ab7a7d8&v=4" width="50"> [Utkarsh Shankar](https://github.com/UtkarshShankar)
 
-
+> <img src="https://avatars1.githubusercontent.com/u/53577764?s=400&u=2efa2f97e039e28e8024495dfa71966fdc551089&v=4" width="50"> [Sanket Nayak](https://github.com/SanketKN)
