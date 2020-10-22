@@ -123,3 +123,5 @@ These are the list of contributors to this project **who have completed 5 proble
 > <img src="https://avatars1.githubusercontent.com/u/53288567?s=400&u=affbca75ed842d8471ee39b7ff0e80987607f359&v=4" width="50"> [Sonu Kumar Sharma](https://github.com/Sharma-chanism)
 
 > <img src="https://avatars0.githubusercontent.com/u/21211904?s=460&v=4" width="50"> [Ayush Sharma](https://github.com/ayush933)
+
+> <img src="https://avatars2.githubusercontent.com/u/53346605?s=400&u=3123e8b1d21be6142c5250360fc1ccd6939bbd61&v=4" width="50"> [Sudeep Swain](https://github.com/Sudeep25022000)
