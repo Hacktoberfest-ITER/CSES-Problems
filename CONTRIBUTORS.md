@@ -127,3 +127,5 @@ These are the list of contributors to this project **who have completed 5 proble
 > <img src="https://avatars2.githubusercontent.com/u/53346605?s=400&u=3123e8b1d21be6142c5250360fc1ccd6939bbd61&v=4" width="50"> [Sudeep Swain](https://github.com/Sudeep25022000)
 
 > <img src="https://avatars1.githubusercontent.com/u/53577764?s=400&u=2efa2f97e039e28e8024495dfa71966fdc551089&v=4" width="50"> [Sanket Nayak](https://github.com/SanketKN)
+
+> <img src="https://avatars0.githubusercontent.com/u/53314035?s=400&u=f22f5bc5f561c5442aa26eb2ea5719d43880b029&v=4" width="50"> [Pratik Sonal](https://github.com/PratikSonal)
